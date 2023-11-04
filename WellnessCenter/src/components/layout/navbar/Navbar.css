@@ -1,0 +1,33 @@
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+}
+.btnsNavbar{
+    display: flex;
+    gap: 1rem;
+}
+.btnsNavbar .btnNavbar{
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.btnsNavbar .btnNavbar:hover{
+    color: blueviolet;
+    background-color: --main-button-color;
+    text-decoration: underline;
+}
+.btnNavbar.active{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.reservarBtn{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
