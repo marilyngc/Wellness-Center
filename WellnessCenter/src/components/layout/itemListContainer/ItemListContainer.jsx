@@ -5,7 +5,7 @@ import { FrontPage } from "../frontPage/FrontPage"
 export const ItemListContainer = () =>  {
 
     return(
-        <main className=" container-fluid border bg-dark" >
+        <main className=" container-fluid  " >
         
         <FrontPage/> 
         </main>

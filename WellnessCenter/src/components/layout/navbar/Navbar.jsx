@@ -12,7 +12,7 @@ export const Navbar = () =>{
 
     console.log(activeSec);
 
-    return <nav>
+    return <nav >
         <img alt="logoWellness" src={wellnessLogo}/>
         <div className="btnsNavbar">
         {hrefs.map((href, index) => 
