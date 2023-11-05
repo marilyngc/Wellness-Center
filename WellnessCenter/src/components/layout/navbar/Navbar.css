@@ -3,31 +3,96 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
     left: 0;
     right: 0;
-    padding: 1rem;
+    padding: 1.5rem 7rem;
 }
 .btnsNavbar{
+   
+    /* gap: 1rem; */
+    width: max-content;
+    height: 78.69px;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 0 2rem;
 }
-.btnsNavbar .btnNavbar{
-    padding: 0.25rem 0.5rem;
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+    list-style-type: none;
+   
+}
+
+ .nav-item .nav-link{
     text-decoration: none;
-    color: black;
+    color: #4F4F4F;
     font-weight: 600;
+    transition: all 200ms linear;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+	padding: 5px 0 !important;
+
+ }
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: #8167a9;
+	opacity: 0;
+    transition: all 200ms linear;
 }
-.btnsNavbar .btnNavbar:hover{
-    color: blueviolet;
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item .nav-link:hover{
+    color: #643992;
     background-color: --main-button-color;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
-.btnNavbar.active{
-    color: blueviolet;
-    text-decoration: underline;
+.nav-item.active:hover:after{
+	opacity: 0;
+    color: #643992;
 }
+
 .reservarBtn{
     display: flex;
     gap: 0.5rem;
     padding: 0.25rem 0.5rem;
 }
+
+
+
+  /* Button Reserve  
+  //////////////////////////////////*/
+
+  .btn-reserve  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 54px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: #8A5DBA;
+    color: white;
+    font-size: 20px;
+    border: none;
+padding: 11px 35px;
+transition: all 200ms linear;
+  }
+label{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.btn-reserve:hover{
+    background-color: #643992;
+}
+

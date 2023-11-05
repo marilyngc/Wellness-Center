@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import { Navbar } from './components/layout/navbar/Navbar.jsx';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'
+import { AppRouter } from './router/AppRouter.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-     <Navbar/>
-    </>
+   <AppRouter/>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export const Hrefs = ({activeSec,setActiveSec,href}) =>{
 
@@ -7,6 +8,8 @@ export const Hrefs = ({activeSec,setActiveSec,href}) =>{
         setActiveSec(href)
     }
 
-    return <a href="" className={(activeSec == href ? 'btnNavbar active' : 'btnNavbar')} onClick={(e)=>handleClick(e)}>{href}</a>
+    return <li className="nav-item">
+<Link  to={`/${href}`} className={"nav-link " + (activeSec == href ? 'btnNavbar active' : 'btnNavbar')} onClick={(e)=>handleClick(e)}>{href}</Link>
+    </li> 
 
 }
