@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "../components/layout/navbar/Navbar";
+import { NavBar } from "../components/layout/navbar/Navbar";
 import { useState } from 'react'
 import { ItemListContainer } from "../components/layout/itemListContainer/ItemListContainer";
 
@@ -8,8 +8,8 @@ export const AppRouter = () => {
     return(
      <BrowserRouter>
      <Routes>
-     <Route path="/" element = {<Navbar /> }/>
-     <Route path="*" element={<Navbar />} />
+     <Route path="/" element = {<NavBar /> }/>
+     <Route path="*" element={<NavBar />} />
     
      </Routes>
      <Routes>

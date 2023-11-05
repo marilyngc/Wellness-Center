@@ -1,11 +1,5 @@
-nav{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
+.navBar{
+    
     padding: 1.5rem 7rem;
     height: 120px;
     background-color: #ffff;
@@ -13,13 +7,10 @@ nav{
 .btnsNavbar{
    
     /* gap: 1rem; */
-    width: max-content;
-    height: 78.69px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1000px;
-    padding: 0 2rem;
+    width: 50.5rem;
+    height: 4.9rem;
+   
+
 }
 .nav-item{
 	position: relative;
@@ -87,7 +78,6 @@ nav{
     color: white;
     font-size: 20px;
     border: none;
-padding: 11px 35px;
 transition: all 200ms linear;
   }
 label{

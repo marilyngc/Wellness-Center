@@ -6,7 +6,7 @@ export const ItemListContainer = () =>  {
 
     return(
         <main className=" container-fluid  " >
-        
+        {/* convertir a responsive */}
         <FrontPage/> 
         </main>
     )
