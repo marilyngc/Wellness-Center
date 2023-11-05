@@ -1,3 +1,4 @@
+import { CardPersonalized } from "../cardPersonalized/CardPersonalized"
 import { FrontPage } from "../frontPage/FrontPage"
 
 
@@ -8,6 +9,7 @@ export const ItemListContainer = () =>  {
         <main className=" container-fluid  " >
         {/* convertir a responsive */}
         <FrontPage/> 
+        <CardPersonalized/>
         </main>
     )
 }
