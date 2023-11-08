@@ -41,31 +41,29 @@ export const CardPersonalized = () => {
             }
           ]
         }
-    return(
-        <section className=" container-fluid mt-3 d-flex flex-column justify-content-center align-items-center ">
-            <div><h3>Conocé nuestros servicios destacados
-</h3></div>
-<div className=" container-fluid   ">
-<Slider {...settings}>
-{data.map((d,index) => (
-   <Card key={index}  className="h-100 mx-5 shadow border-0  rounded-4">
-   <Card.Img variant="top" src={d.img}  className="rounded-top h-75 "/>
-   <Card.Body>
-
-     <Card.Text className="text-center fw-medium">
-      {d.review}
-     </Card.Text>
-   
-   </Card.Body>
- </Card>
-  
-)
-    
-)}
-</Slider>
-</div>
-        </section>
-    )
+  return(
+      <section className=" container-fluid mt-3 d-flex flex-column justify-content-center align-items-center ">
+        <div>
+          <h3>Conocé nuestros servicios destacados</h3>
+        </div>
+        <div className=" container-fluid   ">
+          <Slider {...settings}>
+            {data.map((d,index) => (
+              <Card key={index}  className="h-100 mx-5 shadow border-0  rounded-4">
+              <Card.Img variant="top" src={d.img}  className="rounded-top h-75 "/>
+              <Card.Body>
+                <Card.Text className="text-center fw-medium">
+                  {d.review}
+                </Card.Text>
+              
+              </Card.Body>
+            </Card>
+            )
+            )}
+          </Slider>
+        </div>
+      </section>
+  )
 }
 
 const data = [

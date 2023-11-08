@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export const NavBar = () =>{
 
     const [activeSec,setActiveSec] = useState("");
-    const hrefs = ["Gimnasio","Planes Spa","Estética"];
+    const hrefs = [{title:"Gimnasio",href:'gimnasio'},{title:"Planes Spa",href:'spa'},{title:"Estética",href:'estética'}];
 
     console.log(activeSec);
 
@@ -32,20 +32,16 @@ export const NavBar = () =>{
                 
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="align-items-center  justify-content-between flex-grow-1 pe-3">
-                <div className="btnsNavbar m-auto d-flex align-items-center  justify-content-between">
-    {hrefs.map((href, index) => 
-              <ul>
-                 <Hrefs key={index} to={href.hrefs} activeSec={activeSec} setActiveSec={setActiveSec} href={href}/> 
-              </ul>
-             
-            
-              )}
-           
-         
-    </div>
-    <BtnReserve/> 
-                </Nav>
+              <Nav className="align-items-center  justify-content-between flex-grow-1 pe-3">
+              <div className="btnsNavbar m-auto d-flex align-items-center  justify-content-between">
+              {hrefs.map((href, index) => 
+                <ul>
+                  <Hrefs key={index} activeSec={activeSec} setActiveSec={setActiveSec} href={href.href} title={href.title}/> 
+                </ul>
+              )}  
+              </div>
+              <BtnReserve/> 
+              </Nav>
         
               </Offcanvas.Body>
             </Navbar.Offcanvas>

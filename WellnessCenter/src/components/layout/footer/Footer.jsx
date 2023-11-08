@@ -1,9 +1,10 @@
+import React from "react";
+import './Footer.css'
 
-
-export const Footer  = () => {
-    return(
-        <footer>
-            
+ const Footer  = () => {
+    return <footer>
+            <h6>Desarrollado por Camila Minoldo, Marilyn Celis, Karina Paz y Luis Taliercio</h6>
         </footer>
-    )
 }
+
+export default Footer;

@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: gainsboro;
+    bottom: 0;
+    padding: 1rem;
+}
+footer h6{
+    margin: 0;
+}
