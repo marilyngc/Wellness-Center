@@ -1,19 +1,19 @@
-import "./CardPersonalized.css"
-import imgTemporari from "../../../assets/contents/Rectangle19.png"
+
+import imgTemporari from "../../../assets/contents/piscina.jpeg"
 import {Card} from "react-bootstrap";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "./slick.css"; 
+import "./slick-theme.css";
 
 export const CardPersonalized = () => {
     
         let settings = {
           dots: true,
           infinite: true,
-          speed: 500,
-          slidesToShow: 2.1,
+          speed: 700,
+          slidesToShow: 3.8,
           slidesToScroll: 1,
-          initialSlide: 0,
+          initialSlide: 1,
           responsive: [
             {
               breakpoint: 1024,
@@ -42,17 +42,17 @@ export const CardPersonalized = () => {
           ]
         }
     return(
-        <section className=" container-fluid d-flex flex-column justify-content-center align-items-center">
+        <section className=" container-fluid mt-3 d-flex flex-column justify-content-center align-items-center ">
             <div><h3>Conocé nuestros servicios destacados
 </h3></div>
-<div className="w-50">
+<div className=" container-fluid   ">
 <Slider {...settings}>
 {data.map((d,index) => (
-   <Card key={index} style={{ width: '18rem' }} className="mb-5">
-   <Card.Img variant="top" src={d.img}  className="rounded"/>
+   <Card key={index}  className="h-100 mx-5 shadow border-0  rounded-4">
+   <Card.Img variant="top" src={d.img}  className="rounded-top h-75 "/>
    <Card.Body>
 
-     <Card.Text>
+     <Card.Text className="text-center fw-medium">
       {d.review}
      </Card.Text>
    

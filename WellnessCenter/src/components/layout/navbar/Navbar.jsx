@@ -17,7 +17,7 @@ export const NavBar = () =>{
     <> 
     
     {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
-        <Navbar key={expand} expand={expand} fixed="top" className={` d-flex align-items-center  justify-content-between navBar d-${expand === 'lg' ? 'block' : 'none'}`}>
+        <Navbar key={expand} expand={expand} fixed="top" className={` d-flex align-items-center  justify-content-between navBar shadow-sm   d-${expand === 'lg' ? 'block' : 'none'}`}>
           <Container fluid>
             <Link to="/"> <Image alt="logoWellness" src={wellnessLogo} className="ps-5"/></Link>
           
