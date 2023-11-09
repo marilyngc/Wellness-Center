@@ -1,0 +1,28 @@
+
+
+h4{
+    font-family:'https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat&display=swap';
+    ;
+    font-size: 65px;
+    color: #643992;
+    line-height: 81.9px;
+   
+}
+
+h5{
+    color: #643992;
+    font-size: 34px;
+    font-family: 'Lucida Bright';
+}
+
+.p-secondary{
+    width: 700px;
+color: #4F4F4F;
+}
+.border-circle{
+    width: 405px;
+    height: 405px;
+    background-color: transparent; 
+    border: 40px solid #8A5DBA; 
+    border-radius: 100%; 
+}

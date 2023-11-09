@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Hrefs } from "./Hrefs.jsx";
+import { HrefsData } from "../../../data/MOCK_DATA.jsx";
 import './Navbar.css'
 import wellnessLogo from "../../../assets/logo/wellnessLogo.svg"
 import { BtnReserve } from "./BtnReserve.jsx";
@@ -9,7 +10,7 @@ import { Link } from "react-router-dom";
 export const NavBar = () =>{
 
     const [activeSec,setActiveSec] = useState("");
-    const hrefs = [{title:"Gimnasio",href:'gimnasio'},{title:"Planes Spa",href:'spa'},{title:"Estética",href:'estética'}];
+  
 
     console.log(activeSec);
 
@@ -34,7 +35,7 @@ export const NavBar = () =>{
               <Offcanvas.Body>
               <Nav className="align-items-center  justify-content-between flex-grow-1 pe-3">
               <div className="btnsNavbar m-auto d-flex align-items-center  justify-content-between">
-              {hrefs.map((href, index) => 
+              {HrefsData.map((href, index) => 
                 <ul>
                   <Hrefs key={index} activeSec={activeSec} setActiveSec={setActiveSec} href={href.href} title={href.title}/> 
                 </ul>
