@@ -2,6 +2,7 @@ footer{
     width: 100%;
     text-align: center;
     background-color: gainsboro;
+    position: absolute;
     bottom: 0;
     padding: 1rem;
 }

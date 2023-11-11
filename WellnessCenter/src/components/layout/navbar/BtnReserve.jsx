@@ -6,7 +6,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 export const BtnReserve = () => {
 
     return (
-        <div class="button ">
+        <div className="button ">
 <button className="btn-reserve"> <BsWhatsapp size={27} /><label>Reservar</label></button>
 
 </div>

@@ -17,7 +17,7 @@ export const NavBar = () =>{
     return ( 
     <> 
     
-    {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
+    {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand,index) => (
         <Navbar key={expand} expand={expand} fixed="top" className={` d-flex align-items-center  justify-content-between navBar shadow-sm   d-${expand === 'lg' ? 'block' : 'none'}`}>
           <Container fluid>
             <Link to="/"> <Image alt="logoWellness" src={wellnessLogo} className="ps-5"/></Link>
@@ -37,7 +37,7 @@ export const NavBar = () =>{
               <div className="btnsNavbar m-auto d-flex align-items-center  justify-content-between">
               {HrefsData.map((href, index) => 
                 <ul>
-                  <Hrefs key={index} activeSec={activeSec} setActiveSec={setActiveSec} href={href.href} title={href.title}/> 
+                  <Hrefs key={index} activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title}/> 
                 </ul>
               )}  
               </div>

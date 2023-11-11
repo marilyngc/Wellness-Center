@@ -5,10 +5,10 @@ section{
 
 .box-front{
     width: 100%;
+    max-width: 100%;
     height: max-content;
    padding: 0;
    position: relative;
-  
 }
 
 

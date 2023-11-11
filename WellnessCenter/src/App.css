@@ -3,12 +3,19 @@
   margin: 0;
   padding: 0;
  box-sizing: border-box;
- height: 100%;
  font-family: "Open Sans Hebrew";
+ min-height: 100vh;
+ height: fit-content;
 }
 
 main{
   margin-top: 133px;  
-  
+}
+
+body{
+  width: 100%;
+  position: relative;
+  min-height:100vh;
+  height:fit-content;
 }
  
