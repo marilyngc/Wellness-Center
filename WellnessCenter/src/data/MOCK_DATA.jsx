@@ -2,6 +2,8 @@ import gimPlan from '../assets/gimPlan.jpg';
 import thermocycling from '../assets/thermocycling.png';
 import electro from '../assets/electro.jpg';
 
+
+
 export const HrefsData = [
     {
         id:1,
@@ -74,4 +76,80 @@ export const plansServices = [
         imgSrc:'',
         className:'planService'
     }
+]
+
+
+export const servicesSpa = [
+    {
+        title:"Service1",
+        imgSrc:gimPlan,
+        duration:"Duración: 2:00 a 3:00 hrs aproximadamente.",
+        items:[ "Sala con aromaterapia y musicoterapia.",
+             "Jacuzzi",
+             "Sauna terapéutico o baño turco (vapor)",
+             "Camilla automasajeadora",
+             "30 minutos de masaje manuales con piedras jade (calientes) ",
+            "Limpieza de cutis. (Exfoliación y humectación)",
+             "Bombones exclusivos de Wellness de Spa. ",
+            "Jugo detox"
+            
+            
+            ],
+            className:'cardService'
+    },
+    {
+        title:"Service1",
+        imgSrc:gimPlan,
+        duration:"Duración: 2:00 a 3:00 hrs aproximadamente.",
+        items:[ "Sala con aromaterapia y musicoterapia.",
+             "Jacuzzi",
+             "Sauna terapéutico o baño turco (vapor)",
+             "Camilla automasajeadora",
+             "30 minutos de masaje manuales con piedras jade (calientes) ",
+            "Limpieza de cutis. (Exfoliación y humectación)",
+             "Bombones exclusivos de Wellness de Spa. ",
+            "Jugo detox"
+            
+            
+            ],
+            className:'cardService'
+    },
+    {
+        title:"Service1",
+        imgSrc:gimPlan,
+        duration:"Duración: 2:00 a 3:00 hrs aproximadamente.",
+        items:[ "Sala con aromaterapia y musicoterapia.",
+             "Jacuzzi",
+             "Sauna terapéutico o baño turco (vapor)",
+             "Camilla automasajeadora",
+             "30 minutos de masaje manuales con piedras jade (calientes) ",
+            "Limpieza de cutis. (Exfoliación y humectación)",
+             "Bombones exclusivos de Wellness de Spa. ",
+            "Jugo detox"
+            
+            
+            ],
+            className:'cardService'
+    },
+   
+   
+    {
+        title:"Service1",
+        imgSrc:gimPlan,
+        duration:"Duración: 2:00 a 3:00 hrs aproximadamente.",
+        items:[ "Sala con aromaterapia y musicoterapia.",
+             "Jacuzzi",
+             "Sauna terapéutico o baño turco (vapor)",
+             "Camilla automasajeadora",
+             "30 minutos de masaje manuales con piedras jade (calientes) ",
+            "Limpieza de cutis. (Exfoliación y humectación)",
+             "Bombones exclusivos de Wellness de Spa. ",
+            "Jugo detox"
+            
+            
+            ],
+            className:'cardService'
+    },
+   
+   
 ]
