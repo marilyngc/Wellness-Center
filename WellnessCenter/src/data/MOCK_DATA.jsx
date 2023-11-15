@@ -57,39 +57,60 @@ export const typePlan = [
 
 export const plansServices = [
     {
-        title: 'Service 1',
-        description: 'Description...',
+        title: 'Personalizado x8',
+        description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
         imgSrc: '',
-        className: 'planService'
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Personalizado x12',
+        description: 'Consta de 12 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
+        plan: 'Personalizado',
+        imgSrc: '',
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Personalizado x8',
+        description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
+        plan: 'Personalizado',
+        imgSrc: '',
+        className: 'planService',
+        tipo:'servicio'
     },
     {
         title: 'Service 2',
         description: 'Description...',
         plan: 'Thermocycling',
         imgSrc: '',
-        className: 'planService'
+        className: 'planService',
+        tipo:'servicio'
     },
     {
         title: 'Service 3',
         description: 'Description...',
         plan: 'Thermocycling',
         imgSrc: '',
-        className: 'planService'
+        className: 'planService',
+        tipo:'servicio'
     },
     {
         title: 'Service 4',
         description: 'Description...',
         plan: 'Electro',
         imgSrc: '',
-        className: 'planService'
+        className: 'planService',
+        tipo:'servicio'
     },
     {
         title: 'Service 5',
         description: 'Description...',
         plan: 'Electro',
         imgSrc: '',
-        className: 'planService'
+        className: 'planService',
+        tipo:'servicio'
     }
 ]
 

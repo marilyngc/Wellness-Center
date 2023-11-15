@@ -1,0 +1,6 @@
+.carouselItems{
+    display: flex;
+}
+.itemCarousel{
+    width: 200px;
+}
