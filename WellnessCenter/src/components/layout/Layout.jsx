@@ -6,7 +6,9 @@ const Layout = ({}) =>{
     return <>
         <NavBar/>
         <Outlet/>
-        <Footer/>
+        
+ {/* lo quito por el momento porque me molestaba a la vista, luego lo acomodamos  */}
+        {/* <Footer/> */}
     </>
 }
 

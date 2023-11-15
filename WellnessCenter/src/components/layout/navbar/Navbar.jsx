@@ -3,7 +3,8 @@ import { Hrefs } from "./Hrefs.jsx";
 import { HrefsData } from "../../../data/MOCK_DATA.jsx";
 import './Navbar.css'
 import wellnessLogo from "../../../assets/logo/wellnessLogo.svg"
-import { BtnReserve } from "./BtnReserve.jsx";
+import { BtnReserve } from "../../common/btnReserve/BtnReserve.jsx";
+import { btnHrefs } from "../../../data/MOCK_DATA";
 import{ Container,Nav,Navbar ,NavDropdown,Image,Offcanvas} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
@@ -41,7 +42,16 @@ export const NavBar = () =>{
                 </ul>
               )}  
               </div>
-              <BtnReserve/> 
+              {Object.keys(btnHrefs).map((key) => (
+  key === 'general' ? (
+    <BtnReserve
+      key={key}
+      text={btnHrefs[key].title || ''}
+      phoneNumber={btnHrefs[key].phoneNumber || ''}
+    />
+  ) : null
+))}
+              
               </Nav>
         
               </Offcanvas.Body>
