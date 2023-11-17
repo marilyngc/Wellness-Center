@@ -95,7 +95,7 @@ export const plansServices = [
         title: 'Service 2',
         description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
         plan: 'Thermocycling',
-        imgSrc: '',
+        imgSrc: thermocycling,
         className: 'planService',
         tipo:'servicio'
     },

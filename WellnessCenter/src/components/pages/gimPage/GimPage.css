@@ -33,6 +33,7 @@ hr{
 }*/
 .infoService{
     width: 100%;
+    height: fit-content;
 }
 .infoService h1{
     text-align: center;
@@ -54,5 +55,28 @@ hr{
 @media screen and (max-width:600px) {
     .services{
         grid-template-rows: auto 1fr;
+        margin-top: 3rem;
+        padding: 1rem !important;
     }
+
+    hr{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    
+    .cardsDetails{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+        height: fit-content;
+    }
+
 }

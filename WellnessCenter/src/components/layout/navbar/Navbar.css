@@ -88,3 +88,18 @@ label{
     background-color: #643992;
 }
 
+@media screen and (max-width:500px){
+
+    .navBar{
+        width: 100vw;
+        padding: 1rem;
+    }
+    .container-fluid{
+        width: 100vw !important;
+        display: flex;
+        flex-direction: row;
+    }
+    .container-fluid a img{
+        }
+
+}
