@@ -116,18 +116,18 @@
     content: '←';
 }
 
-/* Dots */
+Dots
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
 }
 
-.slick-dots
+.-slick-dots
 {
     position: absolute;
   
 
-    display: block;
+    display: none;
 
     width: 100%;
     padding: 0;
@@ -137,11 +137,11 @@
 
     text-align: center;
 }
-.slick-dots li
+.card-personalized-slick-dots li
 {
     position: relative;
 
-    display: inline-block;
+    display: none;
 
     width: 20px;
     height: 20px;

@@ -1,38 +1,22 @@
 /* Slider */
 
 
-.slick-slider 
+/* .slick-slider 
 {
-  margin:0  40px;
-  padding: 40px;
-
-    position: relative;
   
-    display: block;
-    box-sizing: border-box;
+   
+} */
 
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
+/* .slick-list
 {
     position: relative;
-   
+
     display: block;
     overflow: hidden;
 
     margin: 0;
     padding: 0 0 50px 0;
-}
+} */
 .slick-list:focus
 {
     outline: none;
@@ -82,17 +66,17 @@
 .slick-slide
 {
     display: none;
-    float: left;
+    float: right;
 
-  
+ 
     height: 100%;
     min-height: 1px;
 }
 .slick-slide > div {
-
+    
     width: 400px;
     height: 300px;
-    
+   
     
 }
 [dir='rtl'] .slick-slide
@@ -125,8 +109,57 @@
 
     height: auto;
 
-    border: 1px solid transparent;
+    border: 5px solid transparent;
 }
-.slick-arrow.slick-hidden {
+
+
+/* Nuevas clases específicas para el componente CardPersonalized */
+.card-personalized-slider {
+    position: relative;
+  height: 400px;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+    }
+  
+  .card-personalized-list {
+    position: relative;
+
+    display: block;
+  
+}
+    
+  .card-personalized-slide {
     display: none;
-}
+    float: left;
+
+  
+   
+    height: 100%;
+    min-height: 1px;  }
+  
+
+
+    .card-personalized-slide  > div {
+       
+        width: 400px;
+        height: 100%;
+       
+        
+    }
+  /* Aplicar estilos específicos de CardPersonalized sin modificar las clases internas de Slick Slider */
+  .card-personalized-slider .slick-arrow.slick-hidden {
+    display: none;
+  }

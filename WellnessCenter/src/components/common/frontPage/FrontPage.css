@@ -1,5 +1,5 @@
-section{
-    height: 48vh;
+#sectionFront{
+    height: 65vh;
     
 }
 
@@ -16,7 +16,7 @@ section{
     position: absolute;
     
   
-    height: 454px; /* Ajusta la altura según tus necesidades */
+    height: 600px; /* Ajusta la altura según tus necesidades */
     object-fit: cover;
     padding: 0;
   }
@@ -36,25 +36,18 @@ section{
   .frontTitle {
     width: max-content;
     position: absolute;
-   
+  
     top: 18%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 1; 
-    color: white; 
+   
   }
-  .frontTitle h1{
-    width: 520px;
-    height: 57px;
-   text-align: center;
-    font-weight: 600;
+  .frontTitle .titleWellness{
+    width: 530px;
+    height: 60px;
     background-color:#643992;
  
   }
-  .frontTitle h2{
-    width: 626px;
-    height:82px;
-   text-align: center;
-   
-
-  }
+ 
+  
