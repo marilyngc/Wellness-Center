@@ -21,12 +21,38 @@ hr{
     height: 100px;
 }
 
-.services{
+/*.services{
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    margin-left: 5%;
     justify-content: center;
     gap: 4rem;
     margin-bottom: 5rem;
+}*/
+.infoService{
+    width: 100%;
+}
+.infoService h1{
+    text-align: center;
+    font-family: 'Lucida Bright';
+}
+.infoService .descriptionPlan h2{
+    font-family: 'Lucida Bright';
+    color: #643992;
+
+}
+.services{
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(27vw, 1fr));
+    gap: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .services{
+        grid-template-rows: auto 1fr;
+    }
 }

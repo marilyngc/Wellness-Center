@@ -41,17 +41,20 @@ export const typePlan = [
     {
         title: "Personalizado",
         imgSrc: gimPlan,
-        className: 'cardService'
+        className: 'cardService',
+        description: "Ofrecemos entrenamiento personalizado, con una pauta de creada especialmente para ti. Nos enfocamos en tus necesidades y metas. Te guiaremos en todo el proceso, ademas nuestros entrenadores podran monitorear tu rendimiento, asegurandonos que cumplas tus objetivos"
     },
     {
         title: "Thermocycling",
         imgSrc: thermocycling,
-        className: 'cardService'
+        className: 'cardService',
+        description: "Thermocycling es un entrenamiento de bicicleta dentro de una capsula que trabaja con luz infrarrojo, termoterapia y ozonoterapia. Ayudando a eliminar adiposidad localizada, modelar, eliminar toxinas, activar la circulacion, tratar la celulitis, flacidez y tonificar piernas, gluteos y abdomen."
     },
     {
         title: "Electro",
         imgSrc: electro,
-        className: 'cardService'
+        className: 'cardService',
+        description: ""
     }
 ]
 
@@ -60,7 +63,7 @@ export const plansServices = [
         title: 'Personalizado x8',
         description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        imgSrc: '',
+        imgSrc: gimPlan,
         className: 'planService',
         tipo:'servicio'
     },
@@ -68,7 +71,7 @@ export const plansServices = [
         title: 'Personalizado x12',
         description: 'Consta de 12 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        imgSrc: '',
+        imgSrc: gimPlan,
         className: 'planService',
         tipo:'servicio'
     },
@@ -76,13 +79,21 @@ export const plansServices = [
         title: 'Personalizado x8',
         description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        imgSrc: '',
+        imgSrc: gimPlan,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Personalizado x12',
+        description: 'Consta de 12 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
+        plan: 'Personalizado',
+        imgSrc: gimPlan,
         className: 'planService',
         tipo:'servicio'
     },
     {
         title: 'Service 2',
-        description: 'Description...',
+        description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
         plan: 'Thermocycling',
         imgSrc: '',
         className: 'planService',
@@ -90,9 +101,9 @@ export const plansServices = [
     },
     {
         title: 'Service 3',
-        description: 'Description...',
+        description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
         plan: 'Thermocycling',
-        imgSrc: '',
+        imgSrc: thermocycling,
         className: 'planService',
         tipo:'servicio'
     },
@@ -100,7 +111,7 @@ export const plansServices = [
         title: 'Service 4',
         description: 'Description...',
         plan: 'Electro',
-        imgSrc: '',
+        imgSrc: electro,
         className: 'planService',
         tipo:'servicio'
     },
@@ -108,7 +119,7 @@ export const plansServices = [
         title: 'Service 5',
         description: 'Description...',
         plan: 'Electro',
-        imgSrc: '',
+        imgSrc: electro,
         className: 'planService',
         tipo:'servicio'
     }

@@ -15,10 +15,21 @@ const GimPage = () =>{
             {typePlan.map((planName,index) => <CardServices key={index} setPlan={setPlan} plan={plan} {...planName}/>)}
         </div>
         <hr/>
-        <div className="services">
-            {plansServices.filter((planI) => planI.plan == plan )
-            .map((planI,index) => <CardServices key={index} {...planI}/>) }
+        <div className="infoService">
+            <h1>Nuestros servicios</h1>
+            {typePlan.map((typePlan) =>{
+                if (typePlan.title == plan) return <div className="descriptionPlan">
+                    <h2>{typePlan.title}</h2>
+                    <span>{typePlan.description}</span>
+                    </div>
+            })}
+            <div className="services">
+                    
+                {plansServices.filter((planI) => planI.plan == plan )
+                .map((planI,index) => <CardServices key={index} {...planI}/>) }
+            </div>
         </div>
+
     </div>
 
 }
