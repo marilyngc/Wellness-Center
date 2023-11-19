@@ -1,6 +1,8 @@
 import gimPlan from '../assets/gimPlan.jpg';
 import thermocycling from '../assets/thermocycling.png';
 import electro from '../assets/electro.jpg';
+import radioFrecuen from '../assets/Radiofrecuencia-facial-1024x683.png';
+import tratCorporal from '../assets/tratamientos-corporales-y-nutricion-1024x684.jpg';
 
 
 
@@ -190,16 +192,20 @@ export const servicesSpa = [
         " Botas de presoterapia", 
         " Break con infusión, jugo detox libre, sándwich, budín.",
        "  Bombones exclusivos de Wellness  Spa.",
-            
-            
-            
-            
-            
-
-
         ],
         className: 'cardService'
     },
 
 
+]
+
+export const SteticServices = [
+    {
+        title:'Tratamientos Faciales',
+        img:radioFrecuen
+    },
+    {
+        title:'Tratamientos Corporales',
+        img:tratCorporal  
+    }
 ]

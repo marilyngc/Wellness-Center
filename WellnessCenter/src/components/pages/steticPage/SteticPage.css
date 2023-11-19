@@ -1,0 +1,31 @@
+.steticPage{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.steticServices{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+    height: 100%;
+    padding: 2rem;
+}
+.steticService{
+    display: flex;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    padding: 1rem;
+    width: 50%;
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+.steticService h3{
+    color: white;
+    font-family: 'Lucida Bright';
+    font-weight: 300 !important;
+}

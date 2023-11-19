@@ -5,6 +5,7 @@ import { HomePage } from '../components/pages/homePage/HomePage.jsx';
 import ErrorPage from "../components/pages/errorPage/ErrorPage.jsx";
 import GimPage from '../components/pages/gimPage/GimPage.jsx';
 import { SpaPage } from '../components/pages/spaPage/SpaPage.jsx';
+import SteticPage from '../components/pages/steticPage/SteticPage.jsx';
 
 export const AppRouter = () => {
     const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ export const AppRouter = () => {
           {/* body de la primera pagina */}
           <Route path="/" element={<HomePage/> }/>
           <Route path="/gimnasio" element={<GimPage/> }/>
-      <Route path="/spa" element={<SpaPage/>}/>
+          <Route path="/spa" element={<SpaPage/>}/>
+          <Route path="/estética" element={<SteticPage/>}/>
           <Route path="*" element={<ErrorPage/> }/>
         </Route>
      </Routes>
