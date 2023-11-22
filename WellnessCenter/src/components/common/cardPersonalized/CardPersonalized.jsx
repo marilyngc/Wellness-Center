@@ -44,7 +44,7 @@ export const CardPersonalized = () => {
   return(
       <section className=" container-fluid  d-flex flex-column justify-content-center align-items-center ">
         <div>
-          <h3>Conocé nuestros servicios destacados</h3>
+          <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>
         <div className=" container-fluid   ">
           <Slider {...settings} className="card-personalized-slider card-personalized-list card-personalized-slick-dots">

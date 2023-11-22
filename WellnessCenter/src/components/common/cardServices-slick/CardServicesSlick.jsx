@@ -45,7 +45,7 @@ export const CardServiceSlick = () =>{
        <div className="container-fluidr px-5">
 
        <Slider {...settings}>
-{servicesSpa.map((planName,index) => <CardServices className="border " key={index}  {...planName}/>)}
+{servicesSpa.map((planName,index) => <CardServices   key={index}  {...planName}/>)}
 </Slider>
        
        </div>

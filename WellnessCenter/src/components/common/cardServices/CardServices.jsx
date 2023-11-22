@@ -5,7 +5,7 @@ import './CardServices.css'
 const CardServices = ({plan,setPlan,title,description,imgSrc,className,tipo}) =>{
 
     if(tipo == 'servicio'){
-        return <div className={className} onClick={()=>(setPlan && setPlan(title))} >
+        return <div className={className  } onClick={()=>(setPlan && setPlan(title))} >
         <div className="label">
             <label>{title}</label>
             <span>{description}</span>
@@ -15,7 +15,7 @@ const CardServices = ({plan,setPlan,title,description,imgSrc,className,tipo}) =>
         <img src={imgSrc}/>
     </div>
     }else{
-        return <div className={className} onClick={()=>(setPlan && setPlan(title))} style={{backgroundImage:`url('${imgSrc}')`}}>
+        return <div className={className + " shadow-sm"} onClick={()=>(setPlan && setPlan(title))} style={{backgroundImage:`url('${imgSrc}')`}}>
         <div className="label">
             <label>{title}</label>
         </div>

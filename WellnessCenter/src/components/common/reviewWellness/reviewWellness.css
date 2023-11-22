@@ -1,13 +1,5 @@
 
 
-h4{
-    font-family:'https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat&display=swap';
-    ;
-    font-size: 65px;
-    color: #643992;
-    line-height: 81.9px;
-   
-}
 
 h5{
     color: #643992;
@@ -25,4 +17,11 @@ color: #4F4F4F;
     background-color: transparent; 
     border: 40px solid #8A5DBA; 
     border-radius: 100%; 
+    
+    
+}
+.border-circle img{
+    width: 100%;
+   
+    
 }

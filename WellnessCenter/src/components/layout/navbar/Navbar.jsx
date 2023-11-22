@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Hrefs } from "./Hrefs.jsx";
 import { HrefsData } from "../../../data/MOCK_DATA.jsx";
 import './Navbar.css'
-import wellnessLogo from "../../../assets/logo/wellnessLogo.svg"
+import wellnessLogo from "../../../assets/logo/logoWellness.png"
+import logoSpaGym from "../../../assets/logo/logoSpaGym.png"
 import { BtnReserve } from "../../common/btnReserve/BtnReserve.jsx";
 import { btnHrefs } from "../../../data/MOCK_DATA";
 import{ Container,Nav,Navbar ,NavDropdown,Image,Offcanvas} from 'react-bootstrap';
@@ -21,7 +22,10 @@ export const NavBar = () =>{
     {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand,index) => (
         <Navbar key={expand} expand={expand} fixed="top" className={` d-flex align-items-center  justify-content-between navBar shadow-sm   d-${expand === 'lg' ? 'block' : 'none'}`}>
           <Container fluid>
-            <Link to="/"> <Image alt="logoWellness" src={wellnessLogo} className="ps-5"/></Link>
+            <Link to="/">
+               <Image alt="logoWellness" src={wellnessLogo} className="ps-5"/>
+               <Image alt="LogoWellness" src={logoSpaGym}/>
+            </Link>
           
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -36,9 +40,12 @@ export const NavBar = () =>{
               <Offcanvas.Body>
               <Nav className="align-items-center  justify-content-between flex-grow-1 pe-3">
               <div className="btnsNavbar m-auto d-flex align-items-center  justify-content-between">
+            <ul>
+              
+            </ul>
               {HrefsData.map((href, index) => 
-                <ul>
-                  <Hrefs key={index} activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title}/> 
+                <ul  key={index}>
+                  <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title}/> 
                 </ul>
               )}  
               </div>
