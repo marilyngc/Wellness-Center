@@ -9,7 +9,7 @@ export const Hrefs = ({activeSec,setActiveSec,href,title}) =>{
     }
 
     return <li className="nav-item">
-        <Link to={`/${href}`} className={"nav-link " + (activeSec == href ? 'btnNavbar active' : 'btnNavbar')} onClick={(e)=>handleClick(e)}>{title} </Link>
+        <Link to={`/${href}`} className={"nav-link py-lg-5 " + (activeSec == href ? 'btnNavbar active' : 'btnNavbar')} onClick={(e)=>handleClick(e)}>{title} </Link>
     </li> 
 
 }

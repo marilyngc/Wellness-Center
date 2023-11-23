@@ -18,8 +18,8 @@ export const CardPersonalized = () => {
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: true
               }
@@ -27,7 +27,7 @@ export const CardPersonalized = () => {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 2,
                 initialSlide: 2
               }
@@ -42,7 +42,7 @@ export const CardPersonalized = () => {
           ]
         }
   return(
-      <section className=" container-fluid  d-flex flex-column justify-content-center align-items-center ">
+      <section className=" container-fluid mt-5 mt-lg-0 d-flex flex-column justify-content-center align-items-center ">
         <div>
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>

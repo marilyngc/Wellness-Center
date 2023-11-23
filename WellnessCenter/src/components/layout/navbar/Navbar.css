@@ -1,4 +1,4 @@
-.navBar{
+.navbar{
     
     padding: 1.5rem 7rem;
     height: 120px;
@@ -88,18 +88,29 @@ label{
     background-color: #643992;
 }
 
-@media screen and (max-width:500px){
 
-    .navBar{
-        width: 100vw;
-        padding: 1rem;
-    }
-    .container-fluid{
-        width: 100vw !important;
-        display: flex;
-        flex-direction: row;
-    }
-    .container-fluid a img{
-        }
 
-}
+@media screen and (max-width: 767px) {
+   
+    .btnsNavbar {
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .nav-item {
+      position: relative;
+      transition: all 200ms linear;
+      list-style-type: none;
+      font-size: 2px;
+      padding: 0 10px;
+    }
+  
+   
+  
+   
+  
+  
+   
+}  
