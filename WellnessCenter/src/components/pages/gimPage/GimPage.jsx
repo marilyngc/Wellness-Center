@@ -15,7 +15,8 @@ const GimPage = () =>{
             {typePlan.map((planName,index) => <CardServices key={index} setPlan={setPlan} plan={plan} {...planName}/>)}
         </div>
         <hr/>
-        {plan != "" && <div className="infoService">
+        {plan != "" && 
+        <div className="infoService">
             <h1>Nuestros servicios</h1>
             {typePlan.map((typePlan) =>{
                 if (typePlan.title == plan) return <div className="descriptionPlan">

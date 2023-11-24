@@ -3,13 +3,13 @@ import "./cardServicesHorizontal.css"
 import { BtnReserve } from "../btnReserve/BtnReserve";
 import { btnHrefs } from "../../../data/MOCK_DATA";
 
-export const CardServicesHorizontal = ({ title, imgSrc, duration, items,review }) => {
+export const CardServicesHorizontal = ({ title, img, duration, items,review }) => {
   return (
     
 
-      <div class="d-flex align-items-center m-5  border shadow rounded ">
+      <div class="d-flex align-items-center mx-5 my-3  border shadow rounded ">
         <div class="flex-shrink-0 contentImage rounded-start">
-          <Card.Img src={imgSrc} />
+          <Card.Img src={img} />
         </div>
 
         <div class="flex-grow-1 ms-lg-5 ps-lg-3 pt-lg-5  cardBody ">

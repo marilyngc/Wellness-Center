@@ -25,3 +25,24 @@ color: #4F4F4F;
    
     
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .imgBienestar{
+        width: 100%;
+    }
+    .p-secondary{
+        width: 400px;
+ 
+    }
+    
+    .border-circle{
+        margin: 30px 0 0 0;
+        width: 200px;
+        height: 200px;
+        border: 20px solid #8A5DBA;
+    }
+  
+   
+}  

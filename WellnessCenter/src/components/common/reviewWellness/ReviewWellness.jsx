@@ -14,8 +14,8 @@ const ReviewWellness = () => {
                     <Image src={logoWellness}   className="p-2"/>
                 </div>
             </div>
-            <div className="col-6 m-lg-5  pt-5 ">
-                <Image className="ps-5" alt="" src={bienestar}/>
+            <div className="col-6   pt-5 ">
+                <Image className="ps-5 imgBienestar" alt="Titulo bienestar" src={bienestar}/>
                 
                 <div className="">
                     <h5 className="mt-3">Conocénos</h5>

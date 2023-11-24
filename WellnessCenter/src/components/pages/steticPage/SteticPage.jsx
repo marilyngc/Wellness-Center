@@ -17,7 +17,10 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
           <div className="steticPage">
         <div className="steticServices">
           {SteticServices.map((service, index) => (
-            <div className="steticService" onClick={() => handleImageClick(service.title)} style={{ background: `url(${service.img})` }} key={index}>
+           
+            <div className="steticService" onClick={() => handleImageClick(service.title)}
+             style={{ background: `url(${service.img})` }}
+              key={index}>
               <h3>{service.title}</h3>
             </div>
           ))}
@@ -27,19 +30,32 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
         </div>
       
       </div>
-      <section className="my-5 pt-5 container-fluid d-flex flex-column">
+      
+      <section className="mt-4 container-fluid d-flex flex-column">
+
+        
   {SteticServices.map((category, index) => {
-     <h1 className=" ms-5">{currentService}</h1>
+    
+
+    
     if (category.title === currentService) {
-      return category.services.map((service, serviceIndex) => (
+       
+      return( 
+        <>
+        
+        <h1 className="mt-4 ms-5">{currentService}</h1>
+        {category.services.map((service, serviceIndex) =>(
      
    
        
-        <CardServicesHorizontal key={serviceIndex} {...service} />
+     <CardServicesHorizontal key={serviceIndex} {...service} />
     
+   ))}
 
-      ));
-    }
+        </>
+    )};
+       
+  
     return null; // O simplemente no devolver nada 
   })}
  

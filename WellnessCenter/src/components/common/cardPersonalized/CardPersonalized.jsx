@@ -1,6 +1,7 @@
 
-import imgTemporari from "../../../assets/contents/piscina.jpeg"
+
 import {Card} from "react-bootstrap";
+import { carouselServices } from "../../../data/MOCK_DATA.jsx";
 import Slider from "react-slick";
 import "./slick-card.css"; 
 import "./slick-theme-card.css";
@@ -48,11 +49,11 @@ export const CardPersonalized = () => {
         </div>
         <div className=" container-fluid   ">
           <Slider {...settings} className="card-personalized-slider card-personalized-list card-personalized-slick-dots">
-            {data.map((d,index) => (
-              <Card key={index}  className=" card-personalized-slide h-100 mx-5  shadow border-0  rounded-4">
-              <Card.Img variant="top" src={d.img}  className="rounded-top h-75 "/>
-              <Card.Body>
-                <Card.Text className="text-center fw-medium">
+            {carouselServices.map((d,index) => (
+              <Card key={index}  className=" card-personalized-slide   mx-5  shadow border-0  rounded-4">
+              <Card.Img variant="top"  src={d.img} />
+              <Card.Body >
+                <Card.Text className="text-center  ">
                   {d.review}
                 </Card.Text>
               
@@ -66,29 +67,3 @@ export const CardPersonalized = () => {
   )
 }
 
-const data = [
-    {
-        img: imgTemporari,
-        review: "Lorem ipsum dolor sit amet."
-    },
-    {
-        img: imgTemporari,
-        review: "Lorem ipsum dolor sit amet."
-    },
-    {
-        img: imgTemporari,
-        review: "Lorem ipsum dolor sit amet."
-    },
-    {
-        img: imgTemporari,
-        review: "Lorem ipsum dolor sit amet."
-    },
-    {
-        img: imgTemporari,
-        review: "Lorem ipsum dolor sit amet."
-    },
-    
-   
-    
-    
-]

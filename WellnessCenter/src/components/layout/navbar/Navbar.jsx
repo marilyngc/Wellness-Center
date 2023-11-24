@@ -16,7 +16,7 @@ export const NavBar = () => {
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg d-flex align-items-center justify-content-between  shadow-sm  "fixed="top">
+    <nav className="navbar navbar-expand-lg d-flex align-items-center justify-content-between  shadow-sm fixed-top ">
   <div className="container-fluid">
   <Link to="/" className="d-flex justify-content-center align-items-center ">
               <Image alt="logoWellness" src={wellnessLogo}  />

@@ -127,7 +127,7 @@
     position: absolute;
   
 
-    display: block;
+    display: none;
 
     width: 100%;
     padding: 0;
@@ -155,7 +155,7 @@
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    display: none;
 
     width: 15px;
     height: 15px;

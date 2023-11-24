@@ -155,7 +155,7 @@ Dots
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    display: none;
 
     width: 15px;
     height: 15px;
@@ -172,6 +172,7 @@ Dots
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
+
     outline: none;
 }
 .slick-dots li button:hover:before,

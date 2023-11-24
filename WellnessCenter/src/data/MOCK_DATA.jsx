@@ -3,7 +3,9 @@ import thermocycling from '../assets/thermocycling.png';
 import electro from '../assets/electro.jpg';
 import radioFrecuen from '../assets/Radiofrecuencia-facial-1024x683.png';
 import tratCorporal from '../assets/tratamientos-corporales-y-nutricion-1024x684.jpg';
-
+import gymElectro from "../assets/gym/gym-123.jpg";
+import gymPersonalizado from "../assets/gym/gym-personalizado.jpg";
+import spaSauna from "../assets/spa/spa-sauna.jpg";
 
 
 export const HrefsData = [
@@ -38,6 +40,31 @@ export const btnHrefs = {
         phoneNumber: "1138326832",
     },
 };
+
+
+export const carouselServices = [
+    {
+        img: gymElectro,
+        review: "Electro x8"
+    },
+    {
+        img: spaSauna,
+        review: "Wellnes Plata"
+    },
+    {
+        img:gymPersonalizado ,
+        review: "Personalizado x12"
+    },
+    {
+        img: gymPersonalizado ,
+        review: "Lorem ipsum dolor sit amet."
+    },
+    {
+        img:gymPersonalizado ,
+        review: "Lorem ipsum dolor sit amet."
+    },
+]
+
 
 export const typePlan = [
     {
@@ -207,12 +234,12 @@ export const SteticServices = [
             {
                 title:"Puntas de diamante ",
                 review:"sin info",
-                img:tratCorporal,
+                img:radioFrecuen,
             },
             {
                 title:"Tapping",
                 review:"sinINFO",
-                img:tratCorporal,
+                img:radioFrecuen,
             },
         ] 
     },
@@ -224,62 +251,62 @@ export const SteticServices = [
             {
             title:"Electrolipolisis",
             review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Peptonas",
             review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Electroestimulación",
             review:"La Le electroestimulación es una técnica muy utilizada en el ámbito del fitness y la estética. Se trata del uso de aparatos que, mediante impulsos eléctricos, provocan contracciones musculares y, como consecuencia, un efecto similar al que se obtendría ejercitando los músculos ",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Radiofrecuencia",
             review:"La radiofrecuencia es un tratamiento facial y corporal estético muy eficaz, seguro y con efectos duraderos que sirve para acabar con la flacidez del rostro o del cuerpo. Por un lado, elimina arrugas y líneas de expresión y, por otro, acaba con la grasa localizada y la celulitis",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Ultracavitación",
             review:"La ultracavitación es una técnica reductora cuya principal finalidad es eliminar los depósitos de grasa acumulados en el cuerpo de una manera no invasiva, es decir, sin recurrir a cirugía. Las zonas tratadas con ultracavitación son los muslos, las caderas, los brazos y el abdomen",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Vacumterapia",
             review:"La vacumterapia se emplea para extraer los adipocitos que forman el tejido adiposo, destruye la piel de naranja y favorece la circulación sanguínea. Asimismo, mejora el flujo sanguíneo en las capas de la hipodermis, dermis y epidermis",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Masajes reductores",
             review:"El objetivo principal del masaje reductor es reducir la acumulación de grasa en zonas específicas de nuestro cuerpo, como glúteos, abdomen, caderas, cintura o piernas. El proceso de reducción se produce porque se liberan ácidos grasos y toxinas acumuladas en la zona tratada, facilitando así su eliminación",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Drenaje linfático",
             review:"Por ello el drenaje linfático es un tipo de masaje, suave y ligero, que se aplica sobre el sistema circulatorio y cuyo objetivo es movilizar los líquidos del organismo para favorecer la eliminación de las sustancias de deshecho que se acumulan en el líquido que ocupa el espacio entre las células",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Botas de Presoterapia ",
             review:"Son utilizadas para mejorar la circulación de las piernas, aliviar dolencias musculares y reducir la hinchazón acumulada como consecuencia del gran número de horas que pasamos sentados frente al ordenador trabajando",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Crioterapia",
             review:"La crioterapia es un tratamiento reductor que ayuda a disminuir el volumen mediante la eliminación de grasa a través de la aplicación de frío controlado, pero, además, logra tonificar los tejidos, estimula la circulación sanguínea y también sirve para tratar diferentes lesiones musculares",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Baño turco",
             review:"La sala de vapor es muy útil para las personas tanto para proporcionar relajación mental como para aliviar dolencias físicas. En las salas de vapor con altos niveles de humedad se eliminan las toxinas del cuerpo y se consigue una forma corporal más saludable y en forma",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
             {
             title:"Sauna seco",
             review:"Elimina las células muertas presentes en nuestra piel. Suaviza la piel. Al contribuir a eliminar impurezas y toxinas de la piel, la sauna es muy beneficiosa para personas con problemas de acné o psoriasis. Estimula la circulación",
-            img:radioFrecuen,
+            img:tratCorporal,
         },
     ]
     }
