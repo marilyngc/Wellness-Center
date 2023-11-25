@@ -83,7 +83,7 @@ export const typePlan = [
         title: "Electro",
         img: electro,
         className: 'cardService',
-        description: ""
+        description: "Electro fitness, you know? That kind of things that make you burn fat like a boss. Play some hard techno and dance like there is no more to do in life"
     }
 ]
 
@@ -105,10 +105,10 @@ export const plansServices = [
         tipo:'servicio'
     },
     {
-        title: 'Personalizado x8',
-        description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
+        title: 'Personalizado x10',
+        description: 'Consta de 10 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        imgSrc: gimPlan,
+        img: gimPlan,
         className: 'planService',
         tipo:'servicio'
     },
@@ -138,7 +138,7 @@ export const plansServices = [
     },
     {
         title: 'Service 4',
-        description: 'Description...',
+        description: 'Electro, techno, quema caloriaaaaaaaaaaaaaaaaaas... Sigo sin saber que es electro pero hay que poner una descripcion para comprobar el diseño',
         plan: 'Electro',
         img: electro,
         className: 'planService',
@@ -146,7 +146,7 @@ export const plansServices = [
     },
     {
         title: 'Service 5',
-        description: 'Description...',
+        description: 'Electro, techno, quema caloriaaaaaaaaaaaaaaaaaas... Sigo sin saber que es electro pero hay que poner una descripcion para comprobar el diseño',
         plan: 'Electro',
         img: electro,
         className: 'planService',

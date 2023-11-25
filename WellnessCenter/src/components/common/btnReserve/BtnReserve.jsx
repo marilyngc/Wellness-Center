@@ -17,7 +17,7 @@ export const BtnReserve = ({phoneNumber,text}) => {
     }
 
     return (
-        <div >
+        <div className="divBtnReserve">
 <button className="btn-reserve" onClick={handleButtonClick}> <BsWhatsapp size={27} /><label>{text}</label></button>
 
 </div>

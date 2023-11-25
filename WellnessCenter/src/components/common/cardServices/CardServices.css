@@ -29,7 +29,7 @@
 .planService{
     width: 100%;
     /*width:30% si el display es Flex*/
-    height: 30rem;
+    height: fit-content;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -67,15 +67,18 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+.planService .divBtnReserve{
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width:600px) {
     
     .planService{
-        max-height: 30rem !important;
         margin-bottom: 1rem;
     }
     .planService .label{
-        height: fit-content
+        height: 60%
     }
     .planService .label span{
         height:  fit-content;
@@ -83,6 +86,7 @@
     .planService img{
         height: 40%;
     }
+    
     .planService .button{
         display: flex;
         align-items: center;
@@ -106,5 +110,19 @@
     }
     .planService{
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .planService{
+        height: fit-content;
+        max-height: fit-content !important;
+    }
+    .planService .label{
+        height: 80%;
+    }
+    .planService img{
+        height: 20%;
+        max-height: 200px;
     }
 }
