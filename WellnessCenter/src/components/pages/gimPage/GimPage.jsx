@@ -8,7 +8,7 @@ import {typePlan} from '../../../data/MOCK_DATA.jsx'
 const GimPage = () =>{
 
     const array = []
-    const [plan,setPlan] = useState("");
+    const [plan,setPlan] = useState("Personalizado");
     console.log(plan);
     return <div className="gimPage">
         <div className="cardsDetails">
