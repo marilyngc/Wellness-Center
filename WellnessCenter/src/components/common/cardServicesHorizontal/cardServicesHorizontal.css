@@ -1,7 +1,16 @@
+.cardContent{
+  height: 510px; 
+  width: auto;
+  overflow: hidden; 
+
+}
 .contentImage {
-    width: 522px; 
-    height: 573px; 
-    overflow: hidden; 
+    width: max-content; 
+    height: 100%; 
+ 
+   
+    padding: 0;
+    
     
   }
   
@@ -11,10 +20,36 @@
     object-fit:cover; 
   }
 
+  .h3-secondary{
+    color: #4F4F4F;
+  }
+
   .cardBody{
-    width: 754px;
-    height: 573px;
+    /* width: 754px; */
+    height:100%;
+  }
+  
+  .cardBody div{
+    color: #4F4F4F;
+   
    
     
   }
+  @media screen and (max-width: 767px) {
+   
   
+  
+    .cardContent{
+      height: max-content; 
+   
+     
+    }
+    .contentImage {
+      width: auto;
+height: auto;  
+background-color: red;
+}
+  
+    
+   
+}  

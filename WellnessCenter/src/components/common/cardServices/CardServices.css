@@ -20,8 +20,9 @@
     margin-bottom: 2rem;
     padding: 0.25rem 0.5rem;
     color: white;
-    font-weight: 600;
-    background-color: black;
+    font-size: 30px;
+    font-family: 'Lucida Bright';
+    font-weight: 300 !important;
 }
 
 /*Para tarjetas donde se muestran servicios de cada plan, Ej: Servicios de Electro*/

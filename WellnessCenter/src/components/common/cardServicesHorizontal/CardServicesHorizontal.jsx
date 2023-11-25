@@ -7,13 +7,15 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
   return (
     
 
-      <div class="d-flex align-items-center mx-5 my-3  border shadow rounded ">
-        <div class="flex-shrink-0 contentImage rounded-start">
+      <div className="d-flex row align-items-center mx-5 my-3  border shadow rounded cardContent">
+        <div className=" col-5 h-100  contentImage rounded-start">
           <Card.Img src={img} />
         </div>
 
-        <div class="flex-grow-1 ms-lg-5 ps-lg-3 pt-lg-5  cardBody ">
-          <Card.Title className="fs-3">{title}</Card.Title>
+        <div className=" col  d-flex flex-column cardBody ">
+
+          <div className="px-5 pt-5 col ">
+          <Card.Title className="fs-3 mb-2 h1-secondary">{title}</Card.Title>
          {items ? (
           <>
            <p >{duration}</p>
@@ -22,14 +24,16 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
           </ul> 
           </>
          ):(
-           <div> {review}</div>
+           <p className="me-lg-5 pe-lg-5"> {review}</p>
          )
         
         }
           
-          <div className="  d-flex flex-column align-items-center justify-content-between  mt-5 py-3">
-            <h3 className="pb-3">
-              ¿Quieres saber más?
+          </div>
+          
+          <div className="  d-flex flex-column align-items-center justify-content-between  mb-5">
+            <h3 className="pb-3 h1-secondary">
+              ¿Querés saber más?
             </h3>
 
             {Object.keys(btnHrefs).map((key) => (

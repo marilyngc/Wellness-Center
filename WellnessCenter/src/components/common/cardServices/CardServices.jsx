@@ -2,7 +2,7 @@ import React from "react";
 import { BtnReserve } from "../btnReserve/BtnReserve.jsx";
 import './CardServices.css'
 
-const CardServices = ({plan,setPlan,title,description,imgSrc,className,tipo}) =>{
+const CardServices = ({plan,setPlan,title,description,img,className,tipo}) =>{
 
     if(tipo == 'servicio'){
         return <div className={className  } onClick={()=>(setPlan && setPlan(title))} >
@@ -12,10 +12,10 @@ const CardServices = ({plan,setPlan,title,description,imgSrc,className,tipo}) =>
             <label>¿Quieres saber más?</label>
             <BtnReserve text={'Contactános'} phoneNumber={1138326832}/>
         </div>
-        <img src={imgSrc}/>
+        <img src={img}/>
     </div>
     }else{
-        return <div className={className + " shadow-sm"} onClick={()=>(setPlan && setPlan(title))} style={{backgroundImage:`url('${imgSrc}')`}}>
+        return <div className={className + " shadow-sm"} onClick={()=>(setPlan && setPlan(title))} style={{backgroundImage:`url('${img}')`}}>
         <div className="label">
             <label>{title}</label>
         </div>
