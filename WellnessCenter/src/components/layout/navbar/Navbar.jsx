@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Hrefs } from "./Hrefs.jsx";
 import { HrefsData } from "../../../data/MOCK_DATA.jsx";
-import './Navbar.css'
-import wellnessLogo from "../../../assets/logo/logoWellness.png"
-import logoSpaGym from "../../../assets/logo/logoSpaGym.png"
+import './Navbar.css';
+
+import wellnessLogo from "../../../assets/logo/LogoWellness.png";
+import logoSpaGym from "../../../assets/logo/LogoSpaGym.png";
 import { BtnReserve } from "../../common/btnReserve/BtnReserve.jsx";
 import { btnHrefs } from "../../../data/MOCK_DATA";
 import{ Image} from 'react-bootstrap';

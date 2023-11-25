@@ -1,6 +1,7 @@
-import { CardPersonalized } from "../../common/cardPersonalized/CardPersonalized.jsx"
-import { FrontPage } from "../../common/frontPage/FrontPage.jsx"
-import {ReviewWellness} from "../../common/reviewWellness/ReviewWellness.jsx"
+import { CardPersonalized } from "../../common/cardPersonalized/CardPersonalized.jsx";
+import { FrontPage } from "../../common/frontPage/FrontPage.jsx";
+import {ReviewWellness} from "../../common/reviewWellness/ReviewWellness.jsx";
+
 
 // Aqui visualizamos todo el contenido del body del Home
 export const HomePage = () =>  {
@@ -12,5 +13,5 @@ export const HomePage = () =>  {
             <CardPersonalized/>
             <ReviewWellness/>
         </main>
-    )
-}
+    );
+};
