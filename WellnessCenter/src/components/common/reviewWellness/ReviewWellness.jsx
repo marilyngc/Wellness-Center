@@ -5,7 +5,7 @@ import logoWellness from "../../../assets/logo/LogoWellness.png"
 import bienestar from "../../../assets/contents/wellnessBienestar.png"
 
 
-const ReviewWellness = () => {
+export const ReviewWellness = () => {
 
     return (
         <section className=" d-flex row  justify-content-center my-5 ">
@@ -32,4 +32,3 @@ const ReviewWellness = () => {
     )
 }
 
-export default ReviewWellness;
