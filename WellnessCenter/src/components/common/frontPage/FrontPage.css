@@ -41,7 +41,7 @@
     width: max-content;
     position: absolute;
   
-    top:20%; 
+    top:45%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 1; 
@@ -55,50 +55,49 @@
   }
  
   @media screen and (max-width: 767px) {
-   
+    #sectionFront{
+      height: 100vh;
+      
+  }
    
     .box-front{
-      width: 100%;
-      max-width: 100%;
-      height: 600px;
+     width: 100%;
+     max-width: 100%;
+     height: 100%;
      padding: 0;
-     position: relative;
-   
-  }
-  
-  
-  .box-front img {
-      position: absolute;
     
+     position: relative;
      
-        width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
-        
-      height: auto; /* Ajusta la altura según tus necesidades */
-      object-fit: cover;
-      padding: 0;
-    }
+  }
+
+
+  
+  
+ 
     .box-front img:nth-child(1) {
-      width: 50%; /* Ajusta el ancho según tus necesidades */
+      width: 100%; /* Ajusta el ancho según tus necesidades */
       top: 0;
       left: 0;
     
     }
     .box-front img:nth-child(2) {
-      width: 50%; 
-      top: 0;
-      left: 380px;
-      z-index: -1;
+  
+      display: none;
     }
     
     .frontTitle {
       width: 100%;
+      /* background-color: #643992; */
       padding: 0 30px;
       position: relative;
-      top: -55%;
-      left: auto;
+      top: -50%;
+      left: 5%;
       transform: none;
       z-index: 1;
       text-align: center;
+    }
+    .frontTitle img{
+      width: 100%;
     }
     
     .frontTitle .titleWellness {

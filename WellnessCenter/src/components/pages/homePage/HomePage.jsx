@@ -7,7 +7,7 @@ import {ReviewWellness} from "../../common/reviewWellness/ReviewWellness.jsx";
 export const HomePage = () =>  {
 // Page HOME
     return(
-        <main className=" container-fluid  " >
+        <main className="  d-flex row " >
             {/* convertir a responsive */}
             <FrontPage/> 
             <CardPersonalized/>

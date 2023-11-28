@@ -17,18 +17,18 @@ export const NavBar = () => {
 
   return (
     <>
-    <nav className="navbar navbar-expand-lg d-flex align-items-center justify-content-between  shadow-sm fixed-top ">
-  <div className="container-fluid">
-  <Link to="/" className="d-flex justify-content-center align-items-center ">
+    {/* <nav classNameName=" navbar navbar-expand-lg d-flex align-items-center justify-content-between  shadow-sm fixed-top ">
+  
+  <Link to="/" classNameName="d-flex justify-content-center align-items-center ">
               <Image alt="logoWellness" src={wellnessLogo}  />
-              <Image alt="LogoWellness" src={logoSpaGym} className="d-none d-lg-block " />
+              <Image alt="LogoWellness" src={logoSpaGym} classNameName="d-none d-lg-block " />
             </Link>
            
     
-    <div className=" btnsNavbar m-lg-auto d-flex align-items-center justify-content-between" id="navbarNavDropdown">
+    <div classNameName="bg-dark btnsNavbar m-lg-auto  d-flex align-items-center justify-content-between" id="navbarNavDropdown">
     
                 {HrefsData.map((href, index) => (
-                  <ul key={index} className="navbar-nav">
+                  <ul key={index} classNameName="navbar-nav">
                     <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
                   </ul>
                 ))}
@@ -44,37 +44,57 @@ export const NavBar = () => {
               ))}
    
     
-  </div>
-</nav>
-      {/* {['sm', 'md', 'lg', 'xl', 'xxl'].map((expand, index) => (
-        <Navbar key={expand} expand={expand}  className={`d-flex align-items-center justify-content-between navBar shadow-sm d-${expand === 'lg' ? 'block' : 'none'}`}>
-          <Container fluid>
-            <Link to="/" className="d-flex justify-content-center align-items-center">
-              <Image alt="logoWellness" src={wellnessLogo}  />
-              <Image alt="LogoWellness" src={logoSpaGym} className="d-none d-lg-block " />
-            </Link>
+ 
+</nav> */}
 
-            <Nav className={`align-items-center justify-content-${expand === 'lg' ? 'between' : 'start'} flex-grow-1 pe-lg-3`}>
-              <div className={`btnsNavbar m-${expand === 'lg' ? 'auto' : null} d-flex align-items-center justify-content-${expand === 'lg' ? 'between' : 'start'}`}>
-                {HrefsData.map((href, index) => (
-                  <ul key={index}>
-                    <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
-                  </ul>
-                ))}
-              </div>
-              {Object.keys(btnHrefs).map((key) => (
-                key === 'general' ? (
-                  <BtnReserve
-                    key={key}
-                    text={btnHrefs[key].title || ''}
-                    phoneNumber={btnHrefs[key].phoneNumber || ''}
-                  />
-                ) : null
-              ))}
-            </Nav>
-          </Container>
-        </Navbar>
-      ))} */}
+
+<div class="navigation-wrap  start-header start-style bg-light fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md bg-light ">
+					
+          <Link to="/" classNameName="navbar-brand ">
+              <Image alt="logoWellness" src={wellnessLogo}  />
+              <Image alt="LogoWellness" src={logoSpaGym} classNameName="d-none d-lg-block " />
+            </Link>
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+									
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Portfolio</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Agency</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+									
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Journal</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+      
     </>
   );
 };

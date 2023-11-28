@@ -8,7 +8,8 @@ import title from "../../../assets/contents/WELLNESS.png"
 export const FrontPage = () => {
 
     return(
-<section className="d-flex  row " id="sectionFront">
+<section className="d-flex   p-0 row  " id="sectionFront">
+
 
     <div className="box-front ">
     

@@ -29,8 +29,8 @@ export const CardPersonalized = () => {
               breakpoint: 600,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 2,
-                initialSlide: 2
+                slidesToScroll: 1,
+                initialSlide: 1
               }
             },
             {
@@ -43,8 +43,8 @@ export const CardPersonalized = () => {
           ]
         }
   return(
-      <section className=" container-fluid mt-5 mt-lg-0 d-flex flex-column justify-content-center align-items-center ">
-        <div>
+      <section className="mt-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center ">
+        <div className="text-center">
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>
         <div className=" container-fluid   ">
