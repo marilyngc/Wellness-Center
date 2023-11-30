@@ -6,12 +6,20 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
-    border: 2px solid white;
+   
     object-fit: cover;
     background-size: cover;
     background-position: center;
     align-items: center;
-   
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    cursor: pointer;
+    
+}
+
+.cardService:hover{
+    transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
 .cardService label{
     width: fit-content;
@@ -101,12 +109,14 @@
 }
 
 @media screen and (max-width:440px) {
-    .cardService
+    
 }
 
 @media screen and (max-width:440px) {
     .cardService{
         width: 100%;
+       margin: 10px 0;
+        
     }
     .planService{
         margin-bottom: 1rem;
@@ -120,6 +130,7 @@
     }
     .planService .label{
         height: 80%;
+        
     }
     .planService img{
         height: 20%;

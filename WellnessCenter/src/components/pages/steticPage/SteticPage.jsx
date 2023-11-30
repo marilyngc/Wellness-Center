@@ -14,8 +14,10 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
        }
     return (
         <>
-          <div className="steticPage">
-        <div className="steticServices">
+        <main>
+        <section>
+        <div className="steticPage">
+        <div className="steticServices py-0 px-4 px-lg-5 ">
           {SteticServices.map((service, index) => (
            
             <div className="steticService" onClick={() => handleImageClick(service.title)}
@@ -30,8 +32,10 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
         </div>
       
       </div>
+        </section>
+         
       
-      <section className="mt-4 container-fluid d-flex flex-column">
+      <section className="mt-1 container-fluid d-flex flex-column">
 
         
   {SteticServices.map((category, index) => {
@@ -60,6 +64,8 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
   })}
  
 </section>
+        </main>
+     
 
         </>
     

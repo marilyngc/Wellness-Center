@@ -16,7 +16,7 @@ h1{
 main{
   display: flex;
   flex-direction: column;
-  margin-top: 140px;  
+  margin-top:140px;  
 overflow: hidden;
 }
 main section{
@@ -34,4 +34,9 @@ body{
   
   height:fit-content;
 }
- 
+@media screen and (max-width:550px) {
+  main{
+      margin-top: 180px;
+  }
+  
+}

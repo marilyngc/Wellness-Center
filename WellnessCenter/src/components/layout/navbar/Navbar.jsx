@@ -86,18 +86,18 @@ export const NavBar = () => {
 
             </Link>
         </div>
-        <div className="col-12 col-lg-4 m-lg-auto  d-flex align-items-center justify-content-between ">
+        <div className="col-12 col-lg-4 m-lg-auto py-2 py-lg-0 d-flex align-items-center justify-content-around ">
 
        
                 {HrefsData.map((href, index) => (
-      <ul key={index} className="navbar-nav ml-auto pb-2  py-lg-2 px-md-0 mx-5 py-md-0">
+      <ul key={index} className="navbar-nav pb-2  px-lg-0 py-lg-2 px-md-0 mx-lg-5 mx-md-5 py-md-0">
         <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
       </ul>
     ))}
              
                 
         </div>
-        <div className="d-flex col-12 col-lg-4  align-items-center justify-content-center ">
+        <div className="d-flex col-12 col-lg-4 container-btn align-items-center justify-content-center ">
           
         {Object.keys(btnHrefs).map((key) => (
                 key === 'general' ? (

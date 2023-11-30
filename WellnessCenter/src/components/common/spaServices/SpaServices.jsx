@@ -12,14 +12,15 @@ export const SpaServices = () => {
                 <p className="p-subtitle">Ofrecemos entrenamiento personalizado, con una pauta de creada especialmente para ti. Nos enfocamos en tus necesidades y metas. Te guiaremos en todo el proceso, además nuestros entrenadores podrán monitorear tu rendimiento, asegurándonos que cumplas tus objetivos.  </p>
            </div>
               
-           <div className="row px-4 px-lg-0">
+           <div className=" mx-4 mx-lg-0">
            {servicesSpa.map((service,index) =>    
             
-            <div className="col-lg-12 col-6   ">
             <CardServicesHorizontal key={index}  {...service}/>
-            </div>
+           
             )}
            </div>
+       
+         
          
 
            

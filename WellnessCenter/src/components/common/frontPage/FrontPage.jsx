@@ -10,7 +10,7 @@ export const FrontPage = () => {
     return(
 <section >
 
-<div className="col p-0 row  " id="sectionFront">
+<div className="col p-0   " id="sectionFront">
 <div className="box-front ">
     
     <img src={gymFront} alt="Imagen de gimnasio" />

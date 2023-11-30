@@ -58,3 +58,22 @@ color: #4F4F4F;
   
    
 }  
+
+@media screen and (max-width: 560px) {
+
+    .imgBienestar{
+        width: 70%;
+        margin: 0 70px;
+       
+        
+    }
+    h5{
+        display: none;
+    }
+  
+  
+ 
+ 
+  
+   
+}  

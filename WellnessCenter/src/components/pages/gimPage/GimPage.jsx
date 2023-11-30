@@ -10,11 +10,15 @@ const GimPage = () =>{
     const array = []
     const [plan,setPlan] = useState("Personalizado");
     console.log(plan);
-    return <div className="gimPage">
+
+    return(
+    <main>
+           <div className="gimPage">
         <div className="cardsDetails">
             {typePlan.map((planName,index) => <CardServices key={index} setPlan={setPlan} plan={plan} {...planName}/>)}
         </div>
         <hr/>
+        
         {plan != "" && 
         <div className="infoService">
            
@@ -32,6 +36,8 @@ const GimPage = () =>{
         </div>}
 
     </div>
+    </main>
+ )
 
 }
 

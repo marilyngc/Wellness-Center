@@ -1,11 +1,22 @@
-import gimPlan from '../assets/gimPlan.jpg';
-import thermocycling from '../assets/thermocycling.png';
-import electro from '../assets/electro.jpg';
+
 import radioFrecuen from '../assets/Radiofrecuencia-facial-1024x683.png';
 import tratCorporal from '../assets/tratamientos-corporales-y-nutricion-1024x684.jpg';
-import gymElectro from "../assets/gym/gym-123.jpg";
-import gymPersonalizado from "../assets/gym/gym-personalizado.jpg";
-import spaSauna from "../assets/spa/spa-sauna.jpg";
+import gymPerson from "../assets/gym/gym-personalizado.jpg";
+import gymPersonalizado from "../assets/gym/gymPersonalizado.jpg";
+import gymElectro from "../assets/gym/gymElectro.jpg";
+import gymCaminadora from "../assets/gym/gymCaminadora.jpg";
+import gym from "../assets/gym/gym.jpg";
+import gymMachine from "../assets/gym/gymMachine.jpg";
+import gymThermocryling from "../assets/gym/gymThermocryling.jpeg";
+import electroCaminadora from "../assets/gym/electroCaminadora.jpg";
+import electroPiso from "../assets/gym/electroPiso.jpg";
+import electroPersonalizado from "../assets/gym/electroPersonalizado.jpg";
+import electroPeople from "../assets/gym/electroPeople.jpg";
+import spaPiedra from "../assets/spa/spaPiedras.png";
+import spaPool from "../assets/spa/spaPool.jpg";
+import spaSauna from "../assets/spa/spaSauna.jpg";
+import spaMasaje from "../assets/spa/spaMasaje.jpg";
+
 
 
 export const HrefsData = [
@@ -69,19 +80,19 @@ export const carouselServices = [
 export const typePlan = [
     {
         title: "Personalizado",
-        img: gimPlan,
+        img: gymPerson,
         className: 'cardService',
         description: "Ofrecemos entrenamiento personalizado, con una pauta de creada especialmente para ti. Nos enfocamos en tus necesidades y metas. Te guiaremos en todo el proceso, ademas nuestros entrenadores podran monitorear tu rendimiento, asegurandonos que cumplas tus objetivos"
     },
     {
         title: "Thermocycling",
-        img: thermocycling,
+        img: gymThermocryling ,
         className: 'cardService',
         description: "Thermocycling es un entrenamiento de bicicleta dentro de una capsula que trabaja con luz infrarrojo, termoterapia y ozonoterapia. Ayudando a eliminar adiposidad localizada, modelar, eliminar toxinas, activar la circulacion, tratar la celulitis, flacidez y tonificar piernas, gluteos y abdomen."
     },
     {
         title: "Electro",
-        img: electro,
+        img: gymElectro,
         className: 'cardService',
         description: "Electro fitness, you know? That kind of things that make you burn fat like a boss. Play some hard techno and dance like there is no more to do in life"
     }
@@ -92,7 +103,7 @@ export const plansServices = [
         title: 'Personalizado x8',
         description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        img: gimPlan,
+        img: gymCaminadora,
         className: 'planService',
         tipo:'servicio'
     },
@@ -100,7 +111,7 @@ export const plansServices = [
         title: 'Personalizado x12',
         description: 'Consta de 12 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        img: gimPlan,
+        img: gymPerson,
         className: 'planService',
         tipo:'servicio'
     },
@@ -108,7 +119,7 @@ export const plansServices = [
         title: 'Personalizado x10',
         description: 'Consta de 10 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        img: gimPlan,
+        img: gym,
         className: 'planService',
         tipo:'servicio'
     },
@@ -116,7 +127,15 @@ export const plansServices = [
         title: 'Personalizado x12',
         description: 'Consta de 12 clases personalizadas mensuales, crearemos un entrenamiento especifico para ti y un profesor estara guiandote en todo momento.',
         plan: 'Personalizado',
-        img: gimPlan,
+        img: gymMachine,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: '2x1: Electro + Personalizado x8',
+        description: 'Junto a un amigo/a podras tomar 8 clases de Electro con Personalizado , crearemos un entrenamiento específico para ti y tu amigo/a, un profesor estará guiándolos/as en todo momento.',
+        plan: 'Personalizado',
+        img: gymPersonalizado,
         className: 'planService',
         tipo:'servicio'
     },
@@ -124,7 +143,7 @@ export const plansServices = [
         title: 'Service 2',
         description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
         plan: 'Thermocycling',
-        img: thermocycling,
+        img: gymThermocryling ,
         className: 'planService',
         tipo:'servicio'
     },
@@ -132,23 +151,39 @@ export const plansServices = [
         title: 'Service 3',
         description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
         plan: 'Thermocycling',
-        img: thermocycling,
+        img: gymThermocryling ,
         className: 'planService',
         tipo:'servicio'
     },
     {
-        title: 'Service 4',
-        description: 'Electro, techno, quema caloriaaaaaaaaaaaaaaaaaas... Sigo sin saber que es electro pero hay que poner una descripcion para comprobar el diseño',
+        title: 'Personalizado x8',
+        description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento.',
         plan: 'Electro',
-        img: electro,
+        img: electroPiso,
         className: 'planService',
         tipo:'servicio'
     },
     {
-        title: 'Service 5',
-        description: 'Electro, techno, quema caloriaaaaaaaaaaaaaaaaaas... Sigo sin saber que es electro pero hay que poner una descripcion para comprobar el diseño',
+        title: 'Electro x12',
+        description: 'Consta de 12 clases de electrofitness, crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento.',
         plan: 'Electro',
-        img: electro,
+        img: electroCaminadora,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: '2x1: Electro x8',
+        description: 'Consta de 8 clases de electrofitness, crearemos un entrenamiento específico para ti y un amigo/a, un profesor estará guiándolos/as en todo momento. ',
+        plan: 'Electro',
+        img: electroPeople,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Electro + Thermocyclin + Personalizado  x8',
+        description: 'Consta de 8 clases de 3 servicios combinados. Crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento. ',
+        plan: 'Electro',
+        img: electroPersonalizado,
         className: 'planService',
         tipo:'servicio'
     }
@@ -158,7 +193,7 @@ export const plansServices = [
 export const servicesSpa = [
     {
         title: "Wellness Plata para 2",
-        img: radioFrecuen,
+        img:spaSauna,
         duration: "Duración: 2:00 a 3:00 hrs aproximadamente.",
         items: ["Sala con aromaterapia y musicoterapia.",
             "Jacuzzi.",
@@ -173,7 +208,7 @@ export const servicesSpa = [
     },
     {
         title: "Wellness Oro para 2",
-        img: radioFrecuen,
+        img: spaPiedra,
         duration: "Duración: 2:00 a 3:00 hrs aproximadamente.",
         items: ["Sala con aromaterapia y muscicoterapia.",
             "Jacuzzi.",
@@ -189,7 +224,7 @@ export const servicesSpa = [
     },
     {
         title: "Wellness Diamante para 2",
-        img: radioFrecuen,
+        img: spaPool,
         duration: "Duración: 3:00 hrs aproximadamente.",
         items: ["Sala con aromaterapia y muscicoterapia.",
             " Jacuzzi",
@@ -206,8 +241,8 @@ export const servicesSpa = [
 
 
     {
-        title: "Wellness Platino Para Dos",
-        img: radioFrecuen,
+        title: "Wellness Platino Para 2",
+        img: spaMasaje,
         duration: "Duración: 2:00 a 3:00 hrs aproximadamente.",
         items: ["Sala con aromaterapia y musicoterapia.",
          "Jacuzzi",
