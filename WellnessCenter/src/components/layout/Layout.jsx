@@ -5,7 +5,9 @@ import Footer from "./footer/Footer.jsx";
 const Layout = ({}) =>{
     return <>
         <NavBar/>
-        <Outlet/>
+        
+        <Outlet/> 
+
         
  {/* lo quito por el momento porque me molestaba a la vista, luego lo acomodamos  */}
         {/* <Footer/> */}

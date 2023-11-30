@@ -35,12 +35,9 @@ hr{
     width: 100%;
     height: fit-content;
 }
-.infoService h1{
-    text-align: center;
-    font-family: 'Lucida Bright';
-}
+
 .infoService .descriptionPlan h2{
-    font-family: 'Lucida Bright';
+    font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
     color: #643992;
 
 }

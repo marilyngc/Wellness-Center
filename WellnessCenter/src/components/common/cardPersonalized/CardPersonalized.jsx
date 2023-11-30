@@ -43,8 +43,9 @@ export const CardPersonalized = () => {
           ]
         }
   return(
-      <section className="mt-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center ">
-        <div className="text-center">
+      <section >
+        <div className="mt-5 mt-lg-0  justify-content-center align-items-center ">
+        <div className="text-center px-3 px-lg-0 my-lg-3">
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>
         <div className=" container-fluid   ">
@@ -63,6 +64,8 @@ export const CardPersonalized = () => {
             )}
           </Slider>
         </div>
+        </div>
+      
       </section>
   )
 }

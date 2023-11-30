@@ -4,7 +4,9 @@
 h5{
     color: #643992;
     font-size: 34px;
-    font-family: 'Lucida Bright';
+    font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
+
+
 }
 
 .p-secondary{
@@ -30,7 +32,9 @@ color: #4F4F4F;
 @media screen and (max-width: 767px) {
 
     .imgBienestar{
-        width: 100%;
+        width: 50%;
+        margin: 0 200px;
+       
         
     }
     h5{
@@ -39,7 +43,7 @@ color: #4F4F4F;
     .p-secondary{
         width: 100%;
         text-align: center;
-        padding: 0 10px;
+        padding: 0 40px;
  
     }
 

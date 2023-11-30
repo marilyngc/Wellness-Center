@@ -3,18 +3,33 @@
   margin: 0;
   padding: 0;
  box-sizing: border-box;
- font-family: "Open Sans Hebrew";
+
  min-height: 100vh;
  height: fit-content;
 }
 
-main{
-  margin-top: 150px;  
 
+h1{
+  font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
 }
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;  
+overflow: hidden;
+}
+main section{
+
+  flex-direction: row;
+  
+  
+}
+
 
 body{
   width: 100%;
+
   /* position: relative; */
   
   height:fit-content;

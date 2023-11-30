@@ -7,15 +7,15 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
   return (
     
 
-      <div className="d-flex row align-items-center mx-5 my-3  border shadow rounded cardContent">
-        <div className=" col-5 h-100  contentImage rounded-start">
+      <div className="d-flex row align-items-center mx-lg-5 mx-2 my-3  border shadow rounded cardContent">
+        <div className=" col-lg-5 col-12 h-100  contentImage rounded-start">
           <Card.Img src={img} />
         </div>
 
         <div className=" col  d-flex flex-column cardBody ">
 
-          <div className="px-5 pt-5 col ">
-          <Card.Title className="fs-3 mb-2 h1-secondary">{title}</Card.Title>
+          <div className="px-lg-5 px-1 pt-lg-5 pt-4 col ">
+            <h3 className="fs-4 mb-2 ">{title} </h3>
          {items ? (
           <>
            <p >{duration}</p>
@@ -32,7 +32,7 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
           </div>
           
           <div className="  d-flex flex-column align-items-center justify-content-between  mb-5">
-            <h3 className="pb-3 h1-secondary">
+            <h3 className="pb-lg-0 pt-lg-0 pt-4 pb-2 ">
               ¿Querés saber más?
             </h3>
 

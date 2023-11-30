@@ -5,7 +5,7 @@
 
 }
 .contentImage {
-    width: max-content; 
+   
     height: 100%; 
  
    
@@ -35,6 +35,12 @@
    
     
   }
+  .cardBody h3{
+    color: #4F4F4F;
+    font-family: "century gothic" ;
+   
+    
+  }
   @media screen and (max-width: 767px) {
    
   
@@ -47,9 +53,13 @@
     .contentImage {
       width: auto;
 height: auto;  
-background-color: red;
+
 }
+.cardBody h3{
+font-size: 20px;
+ 
   
+}
     
    
 }  

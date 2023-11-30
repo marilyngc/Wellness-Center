@@ -10,6 +10,16 @@ import { btnHrefs } from "../../../data/MOCK_DATA";
 import{ Image} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+
+
 export const NavBar = () => {
   const [activeSec, setActiveSec] = useState("");
 
@@ -17,6 +27,90 @@ export const NavBar = () => {
 
   return (
     <>
+    {/* <Navbar  expand="lg" className="navbar px-lg-5   shadow-sm" fixed="top">
+          <Container fluid>
+          
+              <Link to="/" classNameName="">
+              <Image alt="logoWellness" src={wellnessLogo}  />
+
+            </Link>
+           
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-lg}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-lg}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                <Link to="/" classNameName="">
+              <Image alt="logoWellness" src={wellnessLogo}  />
+
+            </Link>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body className=" ">
+                <Nav className="justify-content-center  m-lg-auto">
+                {HrefsData.map((href, index) => (
+      <ul key={index} className="navbar-nav ml-auto py-4 px-5 px-md-0 mx-5 py-md-0">
+        <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
+      </ul>
+    ))}
+             
+                </Nav>
+                <Form className="d-flex">
+                
+                     {Object.keys(btnHrefs).map((key) => (
+                key === 'general' ? (
+                  <BtnReserve 
+                    key={key}
+                    text={btnHrefs[key].title || ''}
+                    phoneNumber={btnHrefs[key].phoneNumber || ''}
+                  />
+                ) : null
+              ))}
+                  
+                </Form>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+     */}
+
+
+    <header>
+      <nav className="d-flex row  p-lg-4 py-2 bg-light justify-content-around align-items-center   fixed-top shadow-sm">
+        <div className="d-flex col-12 col-lg-4 align-items-center justify-content-center   ">
+        <Link to="/" classNameName="">
+              <Image alt="logoWellness" src={wellnessLogo}  />
+
+            </Link>
+        </div>
+        <div className="col-12 col-lg-4 m-lg-auto  d-flex align-items-center justify-content-between ">
+
+       
+                {HrefsData.map((href, index) => (
+      <ul key={index} className="navbar-nav ml-auto pb-2  py-lg-2 px-md-0 mx-5 py-md-0">
+        <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
+      </ul>
+    ))}
+             
+                
+        </div>
+        <div className="d-flex col-12 col-lg-4  align-items-center justify-content-center ">
+          
+        {Object.keys(btnHrefs).map((key) => (
+                key === 'general' ? (
+                  <BtnReserve 
+                    key={key}
+                    text={btnHrefs[key].title || ''}
+                    phoneNumber={btnHrefs[key].phoneNumber || ''}
+                  />
+                ) : null
+              ))}
+        </div>
+      </nav>
+    </header>
     {/* <nav classNameName=" navbar navbar-expand-lg d-flex align-items-center justify-content-between  shadow-sm fixed-top ">
   
   <Link to="/" classNameName="d-flex justify-content-center align-items-center ">
@@ -47,72 +141,6 @@ export const NavBar = () => {
  
 </nav> */}
 
-
-<div class="navigation-wrap  start-header start-style bg-light fixed-top">
-		<div class="container ">
-			<div class="row ">
-				<div class="col-12">
-					<nav class="navbar  navbar-expand-md bg-light ">
-					
-          <Link to="/" classNameName="navbar-brand ">
-              <Image alt="logoWellness" src={wellnessLogo}  />
-              <Image alt="LogoWellness" src={logoSpaGym} classNameName="d-none d-lg-block " />
-            </Link>
-						
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-            <div className="ms-lg-5 ms-0  collapse navbar-collapse " id="navbarSupportedContent">
-    
-    {HrefsData.map((href, index) => (
-      <ul key={index} className="navbar-nav ml-auto py-4 px-5 px-md-0 mx-5 py-md-0">
-        <Hrefs activeSec={activeSec} setActiveSec={setActiveSec} href={href.route} title={href.title} />
-      </ul>
-    ))}
-    <div className=" ms-lg-5 ms-0">
-    {Object.keys(btnHrefs).map((key) => (
-                key === 'general' ? (
-                  <BtnReserve 
-                    key={key}
-                    text={btnHrefs[key].title || ''}
-                    phoneNumber={btnHrefs[key].phoneNumber || ''}
-                  />
-                ) : null
-              ))}
-
-    </div>
-   
-  </div>
-						{/* <div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto py-4 py-md-0">
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-									
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Portfolio</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Agency</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-									
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Journal</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="#">Contact</a>
-								</li>
-							</ul>
-						</div> */}
-          
-					</nav>		
-				</div>
-			</div>
-		</div>
-	</div>
 
       
     </>
