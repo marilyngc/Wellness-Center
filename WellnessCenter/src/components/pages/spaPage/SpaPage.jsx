@@ -8,6 +8,7 @@ export const SpaPage = () => {
     return(
       <main>
               <CardServiceSlick/>
+         
               <SpaServices/>
       </main>
 

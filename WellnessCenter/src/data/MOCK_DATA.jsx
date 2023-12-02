@@ -12,10 +12,27 @@ import electroCaminadora from "../assets/gym/electroCaminadora.jpg";
 import electroPiso from "../assets/gym/electroPiso.jpg";
 import electroPersonalizado from "../assets/gym/electroPersonalizado.jpg";
 import electroPeople from "../assets/gym/electroPeople.jpg";
+
+// imagenes spa
 import spaPiedra from "../assets/spa/spaPiedras.png";
 import spaPool from "../assets/spa/spaPool.jpg";
 import spaSauna from "../assets/spa/spaSauna.jpg";
 import spaMasaje from "../assets/spa/spaMasaje.jpg";
+
+// Imagenes de estetica
+import bañoTurco from "../assets/estetica/bañoTurco.jpg";
+import BotasPresoterapia from "../assets/estetica/BotasPresoterapia.jpg";
+import Crioterapia from "../assets/estetica/Crioterapia.jpg";
+import Electroestimulación from "../assets/estetica/Electroestimulación.jpg";
+import Peptonas  from "../assets/estetica/Peptonas.jpg";
+import Vacumterapia from "../assets/estetica/Vacumterapia.jpg";
+import TratamientoFacial  from "../assets/estetica/TratamientoFacial.jpg";
+import Ultracavitación  from "../assets/estetica/Ultracavitación.jpg";
+import Electrolipólisis2  from "../assets/estetica/Electrolipólisis2.jpg";
+import MasajesReductores  from "../assets/estetica/MasajesReductores.jpg";
+import DrenajeLinfático  from "../assets/estetica/DrenajeLinfático.jpg";
+import ElectroAcupuntura  from "../assets/estetica/ElectroAcupuntura.jpg";
+import SaunaSeco  from "../assets/estetica/SaunaSeco.jpg";
 
 
 
@@ -23,34 +40,33 @@ export const HrefsData = [
     {
         id: 1,
         title: "Gimnasio",
-        route: "gimnasio"
+        route: "gimnasio",
+        titleBtn: ["Contactános","Reservá"],
+        phoneNumber: "2615959590"
     },
     {
         id: 2,
         title: "Planes Spa",
-        route: "spa"
+        route: "spa",
+        titleBtn: ["Contactános","Reservá"],
+        phoneNumber: "2613154378",
+     
     },
     {
         id: 3,
         title: "Estética",
-        route: "estética"
+        route: "estetica",
+        titleBtn: ["Contactános","Reservá"],
+        phoneNumber: "2615959590"
+    },
+    {
+        id: 4,
+      
+        route: "/",
+        titleBtn: ["Contactános","Reservá"],
+        phoneNumber: "2615959590"
     },
 ]
-
-export const btnHrefs = {
-    general: {
-        title: "Reservá",
-        phoneNumber: "1138326832"
-    },
-    gim: {
-        title: "Contactános",
-        phoneNumber: "1138326832"
-    },
-    spa: {
-        title: "Contactános",
-        phoneNumber: "1138326832",
-    },
-};
 
 
 export const carouselServices = [
@@ -264,18 +280,14 @@ export const servicesSpa = [
 export const SteticServices = [
     {
         title:'Tratamientos Faciales',
-        img:radioFrecuen,
+        img:TratamientoFacial,
         services:[
             {
-                title:"Puntas de diamante ",
-                review:"sin info",
-                img:radioFrecuen,
+                title:"Tratamientos faciales ",
+                review:"Contamos con tratamientos faciales innovadores para mantener tu piel hermosa y renovada. Nuestra misión es brindarte servicios únicos para rejuvenecer y cuidar tu piel. ",
+                img:TratamientoFacial,
             },
-            {
-                title:"Tapping",
-                review:"sinINFO",
-                img:radioFrecuen,
-            },
+         
         ] 
     },
     {
@@ -285,63 +297,68 @@ export const SteticServices = [
         services:[
             {
             title:"Electrolipolisis",
-            review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también",
-            img:tratCorporal,
+            review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también.",
+            img:Electrolipólisis2 ,
         },
             {
             title:"Peptonas",
-            review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también",
-            img:tratCorporal,
+            review:"La Electrolipólisis consiste en la aplicación de microcorrientes eléctricas controladas, para así favorecer el drenaje de las zonas en las que se acumula la grasa, normalmente muslos, glúteos, caderas y parte baja del abdomen, sobre todo en las mujeres, que tienen más tejido adiposo y su metabolismo hormonal también.",
+            img:Peptonas ,
         },
             {
             title:"Electroestimulación",
-            review:"La Le electroestimulación es una técnica muy utilizada en el ámbito del fitness y la estética. Se trata del uso de aparatos que, mediante impulsos eléctricos, provocan contracciones musculares y, como consecuencia, un efecto similar al que se obtendría ejercitando los músculos ",
-            img:tratCorporal,
+            review:"La Le electroestimulación es una técnica muy utilizada en el ámbito del fitness y la estética. Se trata del uso de aparatos que, mediante impulsos eléctricos, provocan contracciones musculares y, como consecuencia, un efecto similar al que se obtendría ejercitando los músculos. ",
+            img:Electroestimulación ,
         },
             {
             title:"Radiofrecuencia",
-            review:"La radiofrecuencia es un tratamiento facial y corporal estético muy eficaz, seguro y con efectos duraderos que sirve para acabar con la flacidez del rostro o del cuerpo. Por un lado, elimina arrugas y líneas de expresión y, por otro, acaba con la grasa localizada y la celulitis",
+            review:"La radiofrecuencia es un tratamiento facial y corporal estético muy eficaz, seguro y con efectos duraderos que sirve para acabar con la flacidez del rostro o del cuerpo. Por un lado, elimina arrugas y líneas de expresión y, por otro, acaba con la grasa localizada y la celulitis.",
             img:tratCorporal,
         },
             {
             title:"Ultracavitación",
-            review:"La ultracavitación es una técnica reductora cuya principal finalidad es eliminar los depósitos de grasa acumulados en el cuerpo de una manera no invasiva, es decir, sin recurrir a cirugía. Las zonas tratadas con ultracavitación son los muslos, las caderas, los brazos y el abdomen",
-            img:tratCorporal,
+            review:"La ultracavitación es una técnica reductora cuya principal finalidad es eliminar los depósitos de grasa acumulados en el cuerpo de una manera no invasiva, es decir, sin recurrir a cirugía. Las zonas tratadas con ultracavitación son los muslos, las caderas, los brazos y el abdomen.",
+            img:Ultracavitación,
         },
             {
             title:"Vacumterapia",
-            review:"La vacumterapia se emplea para extraer los adipocitos que forman el tejido adiposo, destruye la piel de naranja y favorece la circulación sanguínea. Asimismo, mejora el flujo sanguíneo en las capas de la hipodermis, dermis y epidermis",
-            img:tratCorporal,
+            review:"La vacumterapia se emplea para extraer los adipocitos que forman el tejido adiposo, destruye la piel de naranja y favorece la circulación sanguínea. Asimismo, mejora el flujo sanguíneo en las capas de la hipodermis, dermis y epidermis.",
+            img:Vacumterapia,
         },
             {
             title:"Masajes reductores",
-            review:"El objetivo principal del masaje reductor es reducir la acumulación de grasa en zonas específicas de nuestro cuerpo, como glúteos, abdomen, caderas, cintura o piernas. El proceso de reducción se produce porque se liberan ácidos grasos y toxinas acumuladas en la zona tratada, facilitando así su eliminación",
-            img:tratCorporal,
+            review:"El objetivo principal del masaje reductor es reducir la acumulación de grasa en zonas específicas de nuestro cuerpo, como glúteos, abdomen, caderas, cintura o piernas. El proceso de reducción se produce porque se liberan ácidos grasos y toxinas acumuladas en la zona tratada, facilitando así su eliminación.",
+            img:MasajesReductores,
         },
             {
             title:"Drenaje linfático",
-            review:"Por ello el drenaje linfático es un tipo de masaje, suave y ligero, que se aplica sobre el sistema circulatorio y cuyo objetivo es movilizar los líquidos del organismo para favorecer la eliminación de las sustancias de deshecho que se acumulan en el líquido que ocupa el espacio entre las células",
-            img:tratCorporal,
+            review:"Por ello el drenaje linfático es un tipo de masaje, suave y ligero, que se aplica sobre el sistema circulatorio y cuyo objetivo es movilizar los líquidos del organismo para favorecer la eliminación de las sustancias de deshecho que se acumulan en el líquido que ocupa el espacio entre las células.",
+            img:DrenajeLinfático ,
         },
             {
             title:"Botas de Presoterapia ",
             review:"Son utilizadas para mejorar la circulación de las piernas, aliviar dolencias musculares y reducir la hinchazón acumulada como consecuencia del gran número de horas que pasamos sentados frente al ordenador trabajando",
-            img:tratCorporal,
+            img:BotasPresoterapia,
         },
             {
             title:"Crioterapia",
-            review:"La crioterapia es un tratamiento reductor que ayuda a disminuir el volumen mediante la eliminación de grasa a través de la aplicación de frío controlado, pero, además, logra tonificar los tejidos, estimula la circulación sanguínea y también sirve para tratar diferentes lesiones musculares",
-            img:tratCorporal,
+            review:"La crioterapia es un tratamiento reductor que ayuda a disminuir el volumen mediante la eliminación de grasa a través de la aplicación de frío controlado, pero, además, logra tonificar los tejidos, estimula la circulación sanguínea y también sirve para tratar diferentes lesiones musculares.",
+            img:Crioterapia,
+        },
+            {
+            title:"Electro acupuntura",
+            review:"Este tipo de tratamiento con técnicas electroestimulantes está indicado regularmente en la recuperación de lesiones postraumáticas, rehabilitación funcional tendinomuscular y nerviosa, inflamaciones de tejidos blandos, tensión muscular y contracturas, atrofia muscular y dolor en general, lesiones deportivas lumbalgias.",
+            img:ElectroAcupuntura,
         },
             {
             title:"Baño turco",
-            review:"La sala de vapor es muy útil para las personas tanto para proporcionar relajación mental como para aliviar dolencias físicas. En las salas de vapor con altos niveles de humedad se eliminan las toxinas del cuerpo y se consigue una forma corporal más saludable y en forma",
-            img:tratCorporal,
+            review:"La sala de vapor es muy útil para las personas tanto para proporcionar relajación mental como para aliviar dolencias físicas. En las salas de vapor con altos niveles de humedad se eliminan las toxinas del cuerpo y se consigue una forma corporal más saludable y en forma.",
+            img:bañoTurco,
         },
             {
             title:"Sauna seco",
-            review:"Elimina las células muertas presentes en nuestra piel. Suaviza la piel. Al contribuir a eliminar impurezas y toxinas de la piel, la sauna es muy beneficiosa para personas con problemas de acné o psoriasis. Estimula la circulación",
-            img:tratCorporal,
+            review:"Elimina las células muertas presentes en nuestra piel. Suaviza la piel. Al contribuir a eliminar impurezas y toxinas de la piel, la sauna es muy beneficiosa para personas con problemas de acné o psoriasis. Estimula la circulación.",
+            img:SaunaSeco,
         },
     ]
     }

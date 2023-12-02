@@ -1,9 +1,11 @@
-import { Button, Card, CardText } from "react-bootstrap";
+import {Card } from "react-bootstrap";
 import "./cardServicesHorizontal.css"
-import { BtnReserve } from "../btnReserve/BtnReserve";
-import { btnHrefs } from "../../../data/MOCK_DATA";
+import { BtnReserveRoutes } from "../btnReserveRoutes/BtnReserveRoutes.jsx";
+
+
 
 export const CardServicesHorizontal = ({ title, img, duration, items,review }) => {
+ 
   return (
     
 
@@ -32,19 +34,13 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
           </div>
           
           <div className="  d-flex flex-column align-items-center justify-content-between  mb-5">
-            <h3 className="pb-lg-0 pt-lg-0 pt-4 pb-2 ">
+            <h3 className="pb-lg-2 pt-lg-0 pt-4 pb-2 fs-5 ">
               ¿Querés saber más?
             </h3>
+          
+     <BtnReserveRoutes/>
 
-            {Object.keys(btnHrefs).map((key) => (
-  key === 'spa' ? (
-    <BtnReserve
-      key={key}
-      text={btnHrefs[key].title || ''}
-      phoneNumber={btnHrefs[key].phoneNumber || ''}
-    />
-  ) : null
-))}
+
 
           </div>
         </div>

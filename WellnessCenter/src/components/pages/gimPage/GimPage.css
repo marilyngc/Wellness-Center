@@ -3,9 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem;
     min-height: 100vh;
     height: fit-content;
+    color: #4F4F4F;
 }
 .cardsDetails{
     padding: 1rem;
@@ -16,6 +17,7 @@
    
 }
 hr{
+ margin: 80px 0 0 0;
     width: 90%;
     height: 100px;
 }
@@ -35,11 +37,7 @@ hr{
     height: fit-content;
 }
 
-.infoService .descriptionPlan h2{
-    font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
-    color: #643992;
 
-}
 .services{
     display: grid;
     width: 100%;

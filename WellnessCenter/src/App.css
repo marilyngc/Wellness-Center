@@ -9,9 +9,9 @@
 }
 
 
-h1{
+/* h1{
   font-family: 'Century Gothic', 'Apple Gothic', sans-serif;
-}
+} */
 
 main{
   display: flex;
@@ -29,10 +29,28 @@ main section{
 
 body{
   width: 100%;
-
+  font-family: 'Century Gothic', sans-serif;
   /* position: relative; */
   
   height:fit-content;
+}
+
+.p-subtitle{
+  width: 100%;
+color: #4F4F4F;
+font-size: 20px;
+}
+
+h2{
+ 
+  color: #643992;
+
+}
+h3{
+  color: #4F4F4F;
+
+ 
+  
 }
 @media screen and (max-width:550px) {
   main{

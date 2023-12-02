@@ -47,7 +47,7 @@ import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/Card
       return( 
         <>
         
-        <h1 className="mt-4 ms-5">{currentService}</h1>
+        <h2 className="mt-lg-4 ms-lg-5  m-auto">{currentService}</h2>
         {category.services.map((service, serviceIndex) =>(
      
    

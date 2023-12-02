@@ -1,6 +1,6 @@
 import "./FrontPage.css";
-import gymFront from "../../../assets/contents/Rectangle19.png";
-import spaFront from "../../../assets/contents/Rectangle18.png";
+import gymFront from "../../../assets/contents/gymPortada.jpg";
+import spaFront from "../../../assets/contents/spaFront.png";
 import subtitle from "../../../assets/contents/AlcanzaTuMaximo.png"
 import title from "../../../assets/contents/WELLNESS.png"
 

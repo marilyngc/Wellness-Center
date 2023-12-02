@@ -11,6 +11,7 @@ export const CardServiceSlick = () =>{
       <>
          <div className="cardsDetails">
          {servicesSpa.map((planName,index) => <CardServices   key={index}  {...planName}/>)}
+      
         </div>
 
       </>
