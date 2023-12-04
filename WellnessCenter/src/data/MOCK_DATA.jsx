@@ -107,10 +107,10 @@ export const typePlan = [
         description: "Thermocycling es un entrenamiento de bicicleta dentro de una capsula que trabaja con luz infrarrojo, termoterapia y ozonoterapia. Ayudando a eliminar adiposidad localizada, modelar, eliminar toxinas, activar la circulacion, tratar la celulitis, flacidez y tonificar piernas, gluteos y abdomen."
     },
     {
-        title: "Electro",
+        title: "Electrofitness",
         img: gymElectro,
         className: 'cardService',
-        description: "Electro fitness, you know? That kind of things that make you burn fat like a boss. Play some hard techno and dance like there is no more to do in life"
+        description: "Thermocycling  es un entrenamiento de bicicleta dentro de una cápsula que trabaja con luz infrarrojo, termoterapia y ozonoterapia. Ayudando a eliminar adiposidad localizada, modelar, eliminar toxinas, activar la circulación, tratar la celulitis, flacidez y tonificar piernas, glúteos y abdomen."
     }
 ]
 
@@ -156,16 +156,40 @@ export const plansServices = [
         tipo:'servicio'
     },
     {
-        title: 'Service 2',
-        description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
+        title: 'Thermocycling x8',
+        description: 'Consta de 8 clases de Thermocycling, un profesor estará monitoreando y guiándote en todo momento.',
         plan: 'Thermocycling',
         img: gymThermocryling ,
         className: 'planService',
         tipo:'servicio'
     },
     {
-        title: 'Service 3',
-        description: 'Thermocycling perfecto para tonificar tu cuerpo a la vez que obtienes un estado increible tanto mental como fisico',
+        title: 'Thermocyclin x12',
+        description: 'Consta de12 clases de Thermocycling, un profesor estará monitoreando y guiándote en todo momento.',
+        plan: 'Thermocycling',
+        img: gymThermocryling ,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Electro + Thermocycling x8',
+        description: 'Consta de 8 clases de Electro con  Thermocycling , un profesor estará monitoreando y guiándote en todo momento.',
+        plan: 'Thermocycling',
+        img: gymThermocryling ,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: 'Electro + Thermocyclin x12',
+        description: 'Consta de 12 clases de Electro con  Thermocycling , un profesor estará monitoreando y guiándote en todo momento.',
+        plan: 'Thermocycling',
+        img: gymThermocryling ,
+        className: 'planService',
+        tipo:'servicio'
+    },
+    {
+        title: '2x1: Electro + Thermocycling x8',
+        description: 'Junto a un amigo/a podras tomar 8 clases de Electro con  Thermocycling , un profesor estará monitoreandolos y guiándolo en todo momento.',
         plan: 'Thermocycling',
         img: gymThermocryling ,
         className: 'planService',
@@ -174,7 +198,7 @@ export const plansServices = [
     {
         title: 'Personalizado x8',
         description: 'Consta de 8 clases personalizadas mensuales, crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento.',
-        plan: 'Electro',
+        plan: 'Electrofitness',
         img: electroPiso,
         className: 'planService',
         tipo:'servicio'
@@ -182,7 +206,7 @@ export const plansServices = [
     {
         title: 'Electro x12',
         description: 'Consta de 12 clases de electrofitness, crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento.',
-        plan: 'Electro',
+        plan: 'Electrofitness',
         img: electroCaminadora,
         className: 'planService',
         tipo:'servicio'
@@ -190,7 +214,7 @@ export const plansServices = [
     {
         title: '2x1: Electro x8',
         description: 'Consta de 8 clases de electrofitness, crearemos un entrenamiento específico para ti y un amigo/a, un profesor estará guiándolos/as en todo momento. ',
-        plan: 'Electro',
+        plan: 'Electrofitness',
         img: electroPeople,
         className: 'planService',
         tipo:'servicio'
@@ -198,7 +222,7 @@ export const plansServices = [
     {
         title: 'Electro + Thermocyclin + Personalizado  x8',
         description: 'Consta de 8 clases de 3 servicios combinados. Crearemos un entrenamiento específico para ti y un profesor estará guiándote en todo momento. ',
-        plan: 'Electro',
+        plan: 'Electrofitness',
         img: electroPersonalizado,
         className: 'planService',
         tipo:'servicio'

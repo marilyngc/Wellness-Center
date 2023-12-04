@@ -274,7 +274,22 @@
     .slick-slide > div
     {
  
-      width: 320px;
+      width: 380px;
+      padding: 15px 0;
+    }
+   
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+     }
+@media screen and (max-width: 367px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 330px;
       padding: 15px 0;
     }
    

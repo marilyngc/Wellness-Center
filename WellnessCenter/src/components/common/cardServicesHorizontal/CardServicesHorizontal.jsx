@@ -9,7 +9,7 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
   return (
     
 
-      <div className="d-flex row align-items-center mx-lg-5 mx-2 my-3  border shadow rounded cardContent">
+      <div className="d-flex row align-items-center mx-lg-5 mx-4 my-3  border shadow rounded cardContent">
         <div className=" col-lg-5 col-12 h-100  contentImage rounded-start">
           <Card.Img src={img} />
         </div>
