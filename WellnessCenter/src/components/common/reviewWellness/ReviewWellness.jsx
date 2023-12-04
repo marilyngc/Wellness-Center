@@ -9,7 +9,7 @@ export const ReviewWellness = () => {
 
     return (
         <section >
-            <div className=" d-flex row  justify-content-center my-5 ">
+            <div className=" d-flex row  justify-content-center my-lg-5 ">
             <div className="col-lg-4   d-flex justify-content-center align-items-center">
                 <div className="  border-circle  d-flex justify-content-center align-items-center">
                     <Image src={logoWellness}   className="p-2"/>

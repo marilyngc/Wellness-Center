@@ -207,3 +207,37 @@ Dots
     opacity: .75;
     color: #643992;
 }
+
+
+@media screen and (max-width: 767px) {
+ /* Arrows */
+.slick-prev,
+.slick-next
+{
+   
+ 
+
+    opacity: 0;
+
+   
+    
+}
+
+
+  }
+@media screen and (max-width: 567px) {
+ /* Arrows */
+.slick-prev,
+.slick-next
+{
+   
+ 
+
+    opacity: 0;
+
+   
+    
+}
+
+
+  }

@@ -1,5 +1,5 @@
 
-
+import {React,useState} from "react"
 import {Card} from "react-bootstrap";
 import { carouselServices } from "../../../data/MOCK_DATA.jsx";
 import Slider from "react-slick";
@@ -7,7 +7,7 @@ import "./slick-card.css";
 import "./slick-theme-card.css";
 
 export const CardPersonalized = () => {
-    
+ 
         let settings = {
           dots: true,
           infinite: true,
@@ -48,10 +48,10 @@ export const CardPersonalized = () => {
         <div className="text-center px-3 px-lg-0 my-lg-3">
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>
-        <div className=" container-fluid   ">
-          <Slider {...settings} className="card-personalized-slider card-personalized-list card-personalized-slick-dots">
+        <div className=" container-fluid mt-5 mt-lg-0 pt-3 pt-lg-0  ">
+          <Slider {...settings} className="card-personalized-slider w-lg-100 p-lg-5 m-lg-5  p-0 m-0 card-personalized-list card-personalized-slick-dots">
             {carouselServices.map((d,index) => (
-              <Card key={index}  className=" card-personalized-slide   mx-5  shadow border-0  rounded-4">
+              <Card key={index}  className=" card-personalized-slide     shadow border-0  rounded-4">
               <Card.Img variant="top"  src={d.img} />
               <Card.Body >
                 <Card.Text className="text-center  ">
@@ -64,6 +64,7 @@ export const CardPersonalized = () => {
             )}
           </Slider>
         </div>
+  
         </div>
       
       </section>

@@ -20,7 +20,7 @@ import spaSauna from "../assets/spa/spaSauna.jpg";
 import spaMasaje from "../assets/spa/spaMasaje.jpg";
 
 // Imagenes de estetica
-import bañoTurco from "../assets/estetica/bañoTurco.jpg";
+import bañoTurco from "../assets/estetica/BañoTurco.jpg";
 import BotasPresoterapia from "../assets/estetica/BotasPresoterapia.jpg";
 import Crioterapia from "../assets/estetica/Crioterapia.jpg";
 import Electroestimulación from "../assets/estetica/Electroestimulación.jpg";
@@ -79,16 +79,16 @@ export const carouselServices = [
         review: "Wellnes Plata"
     },
     {
-        img:gymPersonalizado ,
+        img:gymPerson ,
         review: "Personalizado x12"
     },
     {
-        img: gymPersonalizado ,
-        review: "Lorem ipsum dolor sit amet."
+        img: electroPeople,
+        review: "2x1: Electro x8"
     },
     {
-        img:gymPersonalizado ,
-        review: "Lorem ipsum dolor sit amet."
+        img:Electrolipólisis2 ,
+        review: "Electrolipolisis"
     },
 ]
 
