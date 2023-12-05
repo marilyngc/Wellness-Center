@@ -10,13 +10,13 @@
     justify-content: space-between;
     padding: 1rem;
  }
-nav .links{
+nav #links{
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-nav .links a{
+nav #links a{
     color: #643992!important;
     text-decoration: none;
     font-size: 20px;
@@ -139,9 +139,36 @@ label{
 	color: #fff;
 	background-color: rgba(129,103,169,.6);
 }
+.mobile{
+    display: none;
+}
 
 /* #Media
 ================================================== */
+
+@media screen and (max-width:750px) {
+    .inactive{
+        display: none !important;
+    }
+    .mobile{
+        display: flex;
+        z-index: 999;
+    }
+    #links{
+        position: absolute;
+        flex-direction: column;
+        background-color: aliceblue;
+        width: fit-content !important;
+        right: 0;
+        top: 0;
+        gap: 1rem;
+        padding: 1rem;
+        height: 400px;
+        border: 3px solid rgba(129,103,169,.6);;
+        border-bottom-left-radius: 20px;
+        z-index: 998;
+    }
+}
 
 @media (max-width: 540px) { 
   .container-btn .divBtnReserve .btn-reserve  {

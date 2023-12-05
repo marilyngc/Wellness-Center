@@ -36,6 +36,9 @@ hr{
     width: 100%;
     height: fit-content;
 }
+.infoService .descriptionPlan{
+    padding-left: 2rem;
+}
 
 
 .services{

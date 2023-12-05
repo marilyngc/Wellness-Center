@@ -23,7 +23,7 @@ const GimPage = () =>{
         <div className="infoService">
            
             {typePlan.map((typePlan) =>{
-                if (typePlan.title == plan) return <div className="ps-5 descriptionPlan">
+                if (typePlan.title == plan) return <div className="descriptionPlan">
                     <h2>{typePlan.title}</h2>
                     <p className="p-subtitle">{typePlan.description}</p>
                     </div>

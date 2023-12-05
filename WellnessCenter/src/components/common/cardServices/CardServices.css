@@ -69,7 +69,7 @@
 
 }
 .planService .label span{
-    height: 100px;
+    height: fit-content;
     
     padding: 1rem 2rem;
 }
@@ -101,6 +101,7 @@
     
     .planService{
         margin-bottom: 1rem;
+        height: 100%;
     }
     .planService .label{
         height: 60%
