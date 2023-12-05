@@ -58,16 +58,15 @@ export const HrefsData = [
         route: "estetica",
         titleBtn: ["Contactános","Reservá"],
         phoneNumber: "2615959590"
-    },
-    {
-        id: 4,
-      
-        route: "/",
-        titleBtn: ["Contactános","Reservá"],
-        phoneNumber: "2615959590"
-    },
+    }
 ]
-
+export const cellPhoneData =
+{
+    id: 4,
+    route: "/",
+    titleBtn: ["Contactános","Reservá"],
+    phoneNumber: "2615959590"
+}
 
 export const carouselServices = [
     {

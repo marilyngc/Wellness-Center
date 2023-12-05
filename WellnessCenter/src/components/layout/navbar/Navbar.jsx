@@ -16,7 +16,18 @@ export const NavBar = () => {
   const [activeSec, setActiveSec] = useState("");
 
   console.log(activeSec);
+  return <nav>
+    <Link to="/">
+      <img src={wellnessLogo}/>
+    </Link>
+    <div className="links">
+      {HrefsData.map((href,index)=><Link to={href.route} key={index}>
+        {href.title}
+      </Link>)}
+    </div>
 
+    <BtnReserveRoutes isInNavBar={true} />
+  </nav>
   return (
     <>
     

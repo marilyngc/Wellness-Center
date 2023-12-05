@@ -5,7 +5,22 @@
    
 }
  */
-
+ nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+ }
+nav .links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .links a{
+    color: #643992!important;
+    text-decoration: none;
+    font-size: 20px;
+}
 
 
 
@@ -51,9 +66,8 @@ label{
 
 
 .nav-link{
-	color: #643992!important;
     
-	font-size: 20px;
+	
 	
     transition: all 200ms linear;
 }
