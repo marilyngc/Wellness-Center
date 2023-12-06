@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    padding-left: 6rem;
  }
 nav #links{
     display: flex;
@@ -147,6 +148,9 @@ label{
 ================================================== */
 
 @media screen and (max-width:750px) {
+    nav{
+        padding-left: 2rem;
+    }
     .inactive{
         display: none !important;
     }
