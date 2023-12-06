@@ -1,5 +1,6 @@
 
 import {React,useState} from "react"
+import { useNavigate } from "react-router";
 import {Card} from "react-bootstrap";
 import { carouselServices } from "../../../data/MOCK_DATA.jsx";
 import Slider from "react-slick";
@@ -7,7 +8,13 @@ import "./slick-card.css";
 import "./slick-theme-card.css";
 
 export const CardPersonalized = () => {
+  const navigate = useNavigate();
  
+  const handleClick = (linkTo,idDirected) =>{
+    console.log(idDirected);
+    navigate(linkTo, {state: {redirectedTo:idDirected}})
+  }
+
         let settings = {
           dots: true,
           infinite: true,
@@ -51,7 +58,7 @@ export const CardPersonalized = () => {
         <div className=" container-fluid mt-5 mt-lg-0 pt-3 pt-lg-0  ">
           <Slider {...settings} className="card-personalized-slider w-lg-100 p-lg-5 m-lg-5  p-0 m-0 card-personalized-list card-personalized-slick-dots">
             {carouselServices.map((d,index) => (
-              <Card key={index}  className=" card-personalized-slide     shadow border-0  rounded-4">
+              <Card key={index}  className=" card-personalized-slide     shadow border-0  rounded-4" onClick={()=>handleClick(d.linkTo,d.idDirected)}>
               <Card.Img variant="top"  src={d.img} />
               <Card.Body >
                 <Card.Text className="text-center  ">

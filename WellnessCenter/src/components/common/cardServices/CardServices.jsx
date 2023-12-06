@@ -3,7 +3,6 @@ import {BtnReserveRoutes} from "../btnReserveRoutes/BtnReserveRoutes.jsx"
  import './CardServices.css'
 
 const CardServices = ({plan,setPlan,title,description,img,className,tipo}) =>{
-    console.log(img);
     if(tipo == 'servicio'){
         return <div className={className  } onClick={()=>(setPlan && setPlan(title))} >
         <div className="label">

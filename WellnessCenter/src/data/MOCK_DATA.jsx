@@ -71,23 +71,33 @@ export const cellPhoneData =
 export const carouselServices = [
     {
         img: gymElectro,
-        review: "Electro x8"
+        review: "Electro x8",
+        linkTo: 'gimnasio',
+        idDirected:'Electrofitness'
     },
     {
         img: spaSauna,
-        review: "Wellnes Plata"
+        review: "Wellnes Plata",
+        linkTo: 'spa',
+        idDirected: 'plataPara2'
     },
     {
         img:gymPerson ,
-        review: "Personalizado x12"
+        review: "Personalizado x12",
+        linkTo: 'gimnasio',
+        idDirected:'Personalizado'
     },
     {
         img: electroPeople,
-        review: "2x1: Electro x8"
+        review: "2x1: Electro x8",
+        linkTo: 'gimnasio',
+        idDirected:'Electrofitness'
     },
     {
         img:Electrolipólisis2 ,
-        review: "Electrolipolisis"
+        review: "Electrolipolisis",
+        linkTo: 'estetica',
+        idDirected:'Tratamientos Corporales'
     },
 ]
 

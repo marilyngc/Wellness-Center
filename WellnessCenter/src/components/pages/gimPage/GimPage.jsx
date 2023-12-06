@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router";
 import './GimPage.css';
 
 import CardServices from "../../common/cardServices/CardServices.jsx";
@@ -8,8 +9,10 @@ import {typePlan} from '../../../data/MOCK_DATA.jsx'
 const GimPage = () =>{
 
     const array = []
-    const [plan,setPlan] = useState("Personalizado");
-    console.log(plan);
+    const location = useLocation();
+    let redirectedTo;
+    if(location.state) redirectedTo = location.state.redirectedTo;
+    const [plan,setPlan] = useState(redirectedTo ? redirectedTo : "Personalizado");
 
     return(
     <main>

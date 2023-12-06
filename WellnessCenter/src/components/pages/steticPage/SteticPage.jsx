@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router";
 import './SteticPage.css';
 import './SteticService.jsx';
 import  { useState } from "react";
@@ -6,8 +7,11 @@ import { SteticServices } from '../../../data/MOCK_DATA.jsx';
 import { CardServicesHorizontal } from "../../common/cardServicesHorizontal/CardServicesHorizontal.jsx";
 
  const SteticPage = () => {
-  
-        const [currentService, setCurrentService] = useState("Tratamientos Faciales");
+        const location = useLocation();
+        let redirectedTo;
+        if(location.state) redirectedTo = location.state.redirectedTo;
+        const [currentService, setCurrentService] = useState(redirectedTo ? redirectedTo : "Tratamientos Faciales");
+        console.log(currentService);
       
        const handleImageClick = (serviceTitle) => {
         setCurrentService(serviceTitle); // se va actualizando con SteticServices
