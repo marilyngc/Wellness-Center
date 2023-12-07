@@ -17,12 +17,18 @@ export const NavBar = () => {
   const [activeSec, setActiveSec] = useState("");
   const [clicked,setClicked] = useState(false);
 
+  const handleClick = (route) =>{
+    setClicked(false);
+    setActiveSec(route);
+    console.log(activeSec);
+  }
+
   return <nav>
     <Link to="/">
       <img src={wellnessLogo}/>
     </Link>
     <div id="links" className={clicked ? '' : 'inactive'} >
-      {HrefsData.map((href,index)=><Link to={href.route} key={index} onClick={()=>setClicked(false)}>
+      {HrefsData.map((href,index)=><Link className={activeSec == href.route ? 'active' : ''}  to={href.route} key={index} onClick={()=>handleClick(href.route)}>
         {href.title}
       </Link>)
       }
