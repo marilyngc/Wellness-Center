@@ -15,7 +15,7 @@ const GimPage = () =>{
     const [plan,setPlan] = useState(redirectedTo ? redirectedTo : "Personalizado");
 
     return(
-    <main>
+    <main className="mt-lg-4">
            <div className="gimPage">
         <div className="cardsDetails">
             {typePlan.map((planName,index) => <CardServices key={index} setPlan={setPlan} plan={plan} {...planName}/>)}

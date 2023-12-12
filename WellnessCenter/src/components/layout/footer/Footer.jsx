@@ -3,6 +3,7 @@ import './Footer.css'
 import { FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { BtnReserveRoutes } from "../../common/btnReserveRoutes/BtnReserveRoutes";
 import networks from "../../../assets/contents/logoSpa.jpg"
+import networksGym from "../../../assets/contents/imageGym.png"
 
 const Footer  = () => {
     return <footer className="">
@@ -50,7 +51,7 @@ Mendoza, Argentina 5500.</a>
                         <a target="_blank" href="https://www.instagram.com/wellnesselectrogym/?hl=es-la" className="m-lg-4 p-lg-1 ps-2 ">  @wellnesselectrogym</a>
               
                 <div className="ms-5 mt-4 container-img  ">
-                <img src={networks} alt=""  />
+                <img src={networksGym} alt=""  />
                        </div>
                 </div>
                 </div>

@@ -7,9 +7,10 @@
  */
  nav{
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    padding-left: 6rem;
+    justify-content: space-around;
+    padding: 1.5rem 15rem;
+   
+  
  }
 nav #links{
     display: flex;

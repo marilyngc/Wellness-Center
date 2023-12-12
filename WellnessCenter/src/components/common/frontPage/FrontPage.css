@@ -38,22 +38,35 @@
     top: 0;
     left: 860px;
     z-index: 1;
+   
   }
 
   .frontTitle {
     width: max-content;
     position: absolute;
-  
-    top:45%; 
+
+    top:40%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 1; 
    
   }
-  .frontTitle .titleWellness{
-    width: 530px;
-    height: 60px;
-    background-color:#643992;
+  .frontTitle .subtitleAlcanza{
+    width: 600px;
+    padding: 10px 20px 5px 20px;
+    border-radius: 30px;
+    background-color: hsla(269, 70%, 60%, 0.616)
+  }
+  .frontTitle .subtitleAlcanza img {
+    padding: 0px 30px ;
+    width: 600px;
+
+  }
+  .frontTitle .titleWellness img{
+
+    width:900px;
+    
+   
  
   }
  
@@ -90,11 +103,11 @@
     }
     
     .frontTitle {
-      width: 80%;
+      width: 70%;
       /* background-color: #643992; */
       padding: 0 30px;
       position: relative;
-      top: -60%;
+      top: -30%;
       left: 7%;
       transform: none;
       z-index: 1;
@@ -104,10 +117,10 @@
       width: 100%;
     }
     
-    .frontTitle .titleWellness {
+    .frontTitle .titleWellness img {
       width: 100%;
       height: auto; /* Ajusta la altura según tus necesidades */
-      background-color: #643992;
+     
     }
     
   }
@@ -126,21 +139,32 @@
  
 
     .frontTitle {
-      width: 60%;
+      width: 50%;
       /* background-color: #643992; */
       padding: 0 20px;
       position: relative;
-      top: -75%;
-      left: 0%;
+      top: -65%;
+      left: 1%;
   
      
     }
     
     
     .frontTitle .titleWellness {
-      width: 90%;
+      width: 100%;
       height: auto; /* Ajusta la altura según tus necesidades */
      
+    }
+    .frontTitle .subtitleAlcanza{
+      width: 300px;
+
+     
+ 
+    }
+    .frontTitle .subtitleAlcanza img {
+  
+      width:300px;
+  
     }
     
   }

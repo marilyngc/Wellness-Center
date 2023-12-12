@@ -52,11 +52,11 @@ export const CardPersonalized = () => {
   return(
       <section >
         <div className="mt-5 mt-lg-0  justify-content-center align-items-center ">
-        <div className="text-center px-3 px-lg-0 my-lg-3">
+        <div className="text-center px-3 px-lg-0 my-lg-0">
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
         </div>
         <div className=" container-fluid mt-5 mt-lg-0 pt-3 pt-lg-0  ">
-          <Slider {...settings} className="card-personalized-slider w-lg-100 p-lg-5 m-lg-5  p-0 m-0 card-personalized-list card-personalized-slick-dots">
+          <Slider {...settings} className="card-personalized-slider w-lg-100  px-lg-5 m-lg-5  p-0 m-0 card-personalized-list card-personalized-slick-dots">
             {carouselServices.map((d,index) => (
               <Card key={index}  className=" card-personalized-slide     shadow border-0  rounded-4" onClick={()=>handleClick(d.linkTo,d.idDirected)}>
               <Card.Img variant="top"  src={d.img} />

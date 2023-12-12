@@ -6,7 +6,7 @@ import { SpaServices } from "../../common/spaServices/SpaServices"
 export const SpaPage = () => {
 
     return(
-      <main>
+      <main className="mt-lg-4">
               <CardServiceSlick/>
          
               <SpaServices/>

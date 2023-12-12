@@ -23,7 +23,7 @@ export const NavBar = () => {
     console.log(activeSec);
   }
 
-  return <nav>
+  return <nav className=" shadow-sm ">
     <Link to="/">
       <img src={wellnessLogo}/>
     </Link>
