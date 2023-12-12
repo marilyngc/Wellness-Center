@@ -1,50 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Slider */
-
-
 /* .slick-slider 
 {
-  
-   
 } */
 
 /* .slick-list
@@ -57,7 +13,9 @@
     margin: 0;
     padding: 0 0 50px 0;
 } */
-
+.mainSec{
+    margin-top: 5rem !important;
+}
 
 .h1-secondary{
     color: #4F4F4F;

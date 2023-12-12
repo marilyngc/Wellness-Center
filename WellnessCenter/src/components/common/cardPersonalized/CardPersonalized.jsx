@@ -50,7 +50,7 @@ export const CardPersonalized = () => {
           ]
         }
   return(
-      <section >
+      <section className="mainSec">
         <div className="mt-5 mt-lg-0  justify-content-center align-items-center ">
         <div className="text-center px-3 px-lg-0 my-lg-0">
           <h1 className="h1-secondary" >Conocé nuestros servicios destacados</h1>
