@@ -17,6 +17,7 @@ nav #links{
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    padding-left: 4rem;
 }
 nav #links a{
     color: #643992!important;
