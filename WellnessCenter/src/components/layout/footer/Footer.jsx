@@ -48,17 +48,19 @@ Mendoza, Argentina 5500.</a>
                
                 <div className="  row   container-networks mt-lg-5 mt-3 ">
                 <div className="col-6 ">
-                        <a  target="_blank" href="https://www.instagram.com/wellnesscenter.spa/?hl=es-la" className="m-lg-4 p-lg-1 ps-2 "> @wellnesscenter.spa</a>
+                        <a  target="_blank" href="https://www.instagram.com/wellnesscenter.spa/?hl=es-la" className="m-lg-4 p-lg-1 ps-2 "> @wellnesscenter.spa </a>
                
                 <div className=" ms-5 mt-4 container-img ">
-                        <img src={networks} alt="" />
+                        <a target="_blank" href="https://www.instagram.com/wellnesscenter.spa/?hl=es-la"> <img src={networks} alt="" /></a>
+                       
                         </div>
                 </div>
                 <div className="col-6">
                         <a target="_blank" href="https://www.instagram.com/wellnesselectrogym/?hl=es-la" className="m-lg-4 p-lg-1 ps-2 ">  @wellnesselectrogym</a>
               
                 <div className="ms-5 mt-4 container-img  ">
-                <img src={networksGym} alt=""  />
+                        <a target="_blank" href="https://www.instagram.com/wellnesselectrogym/?hl=es-la">  <img src={networksGym} alt=""  /></a>
+              
                        </div>
                 </div>
                 </div>

@@ -24,8 +24,9 @@ export const NavBar = () => {
     <Link to="/">
       <img src={wellnessLogo}/>
     </Link>
-    <div id="links" className={clicked ? '' : 'inactive'} >
-      {HrefsData.map((href,index)=><Link className={activeSec == href.route ? 'active' : ''}  to={href.route} key={index} onClick={()=>handleClick(href.route)}>
+    <div id="links" className={clicked ? '' : 'inactive '} >
+      {HrefsData.map((href,index)=>
+      <Link className={activeSec == href.route ? 'active ' : 'nav-item'}  to={href.route} key={index} onClick={()=>handleClick(href.route)}>
         {href.title}
       </Link>)
       }
