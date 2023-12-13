@@ -60,12 +60,28 @@ hr{
         height: 2rem;
     }
 }
+@media screen and (max-width:1300px) {
+    .cardsDetails{
+        gap: 1rem;
+    }
 
+}
+@media screen and (max-width:850px) {
+    .cardsDetails{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardService{
+        width: 80% !important;
+    }
+}
 @media screen and (max-width:550px) {
  
     .cardsDetails{
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
+        align-items: center;
     }
 
     .services{

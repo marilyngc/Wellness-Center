@@ -16,7 +16,7 @@
 main{
   display: flex;
   flex-direction: column;
-overflow: hidden;
+  overflow: hidden;
 }
 main section{
 
@@ -51,7 +51,10 @@ h3{
  
   
 }
-@media screen and (max-width:550px) {
-
+@media screen and (max-width:800px) {
   
+  main{
+    margin-top: 100px;
+  }
+
 }

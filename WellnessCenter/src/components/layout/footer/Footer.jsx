@@ -4,13 +4,14 @@ import { FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import { BtnReserveRoutes } from "../../common/btnReserveRoutes/BtnReserveRoutes";
 import networks from "../../../assets/contents/logoSpa.jpg"
 import networksGym from "../../../assets/contents/imageGym.png"
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer  = () => {
     return <footer className="">
         <div className="container d-flex  row pt-5  m-auto">
-        <div className="col  px-5   py-1">
+        <div className="col  px-5 py-1 footerMain mb-4 mb-lg-0">
         <h4 className="text-light  ">¿Dónde estamos?</h4>
-        <div className="d-flex mt-5">
+        <div className="d-flex mt-lg-5 mt-3">
         <FaMapMarkerAlt  className="fs-1 text-light"/>
         <a target="_blank" href="https://www.google.com/maps/place/Paso+de+los+Andes+1658,+M5502+Capital,+Mendoza/@-32.8808557,-68.8578459,15z/data=!4m16!1m9!3m8!1s0x967e08ff646ab6a1:0x39c194559b53b7fe!2sPaso+de+los+Andes+1658,+M5502+Capital,+Mendoza!3b1!8m2!3d-32.8808629!4d-68.8581815!10e5!16s%2Fg%2F11d_9f9hpp!3m5!1s0x967e08ff646ab6a1:0x39c194559b53b7fe!8m2!3d-32.8808629!4d-68.8581815!16s%2Fg%2F11d_9f9hpp?entry=ttu" className="text-light   w-75 ms-3"> Paso de los Andes 1658,
 Mendoza, Argentina 5500.</a>
@@ -22,8 +23,14 @@ Mendoza, Argentina 5500.</a>
             ¿Tenés alguna duda?
             </h3>
           
-     <BtnReserveRoutes/>
+     {/*<BtnReserveRoutes/>*/}
 
+        <div className="contactPhones">
+                <a href="#" target="_blank"><FaWhatsapp className="fs-2"/>Spa</a>
+        </div>
+        <div className="contactPhones">
+                <a href="#" target="_blank"><FaWhatsapp className="fs-2"/>Gim - Estetica</a>
+        </div>
 
 
           </div>

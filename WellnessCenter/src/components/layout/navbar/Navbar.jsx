@@ -11,8 +11,6 @@ import { Link } from "react-router-dom";
 
 import { BtnReserveRoutes } from "../../common/btnReserveRoutes/BtnReserveRoutes.jsx";
 
-
-
 export const NavBar = () => {
   const [activeSec, setActiveSec] = useState("");
   const [clicked,setClicked] = useState(false);
@@ -20,7 +18,6 @@ export const NavBar = () => {
   const handleClick = (route) =>{
     setClicked(false);
     setActiveSec(route);
-    console.log(activeSec);
   }
 
   return <nav className=" shadow-sm ">
@@ -32,7 +29,7 @@ export const NavBar = () => {
         {href.title}
       </Link>)
       }
-      <BtnReserveRoutes isInNavBar={true} />
+      {/*<BtnReserveRoutes isInNavBar={true} />*/}
     </div>
 
   
