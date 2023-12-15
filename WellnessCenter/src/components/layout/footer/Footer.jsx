@@ -6,7 +6,21 @@ import networks from "../../../assets/contents/logoSpa.jpg"
 import networksGym from "../../../assets/contents/imageGym.png"
 import { FaWhatsapp } from "react-icons/fa";
 
+
 const Footer  = () => {
+        const handleButtonClick =(phoneNumber) => {
+
+                // formateamo el numero de teléfono eliminadno cualquier carácter no numerico
+        
+                const formattedPhoneNumber = phoneNumber.replace(/\D/g," ");
+        
+                // creamos la URL de Whatsapp con el numero de telefono
+                const whatsappURL = `https://wa.me/${formattedPhoneNumber}`;
+        
+                //Abrimos la URL en una nueva ventana o pestaña
+                window.open(whatsappURL, "_blank");
+            }
+        
     return <footer className="">
         <div className="container d-flex  row pt-5  m-auto">
         <div className="col  px-5 py-1 footerMain mb-4 mb-lg-0">
@@ -26,10 +40,10 @@ Mendoza, Argentina 5500.</a>
      {/*<BtnReserveRoutes/>*/}
 
         <div className="contactPhones">
-                <a href="#" target="_blank"><FaWhatsapp className="fs-2"/>Spa</a>
+                <a href="#"  onClick={() => handleButtonClick("2613154378")} target="_blank"><FaWhatsapp className="fs-2"/>Spa</a>
         </div>
         <div className="contactPhones">
-                <a href="#" target="_blank"><FaWhatsapp className="fs-2"/>Gim - Estetica</a>
+                <a href="#" onClick={() => handleButtonClick("2615959590")} target="_blank"><FaWhatsapp className="fs-2"/>Gim - Estetica</a>
         </div>
 
 

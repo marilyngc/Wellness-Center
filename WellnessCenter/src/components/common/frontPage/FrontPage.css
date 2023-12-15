@@ -8,7 +8,7 @@
 .box-front{
     width: max-content;
     max-width: 100%;
-    height: 600px;
+    height: 60dvh;
    padding: 0;
    position: relative;
    
