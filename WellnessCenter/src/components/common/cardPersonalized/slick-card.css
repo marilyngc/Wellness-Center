@@ -227,6 +227,24 @@
 
 
 
+@media screen and (max-width: 1280px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 300px;
+      padding: 15px 20px;
+    }
+   
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+    .mainSec h1{
+        margin-top: 2rem !important;
+    }
+     }
 @media screen and (max-width: 567px) {
 
     .slick-slide > div
@@ -242,7 +260,7 @@
         /* Otros estilos específicos para pantallas pequeñas */
     }
      }
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 375px) {
 
     .slick-slide > div
     {
