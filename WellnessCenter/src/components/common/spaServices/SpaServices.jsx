@@ -14,24 +14,10 @@ export const SpaServices = () => {
               
            <div className=" mx-2 mx-lg-0">
            {servicesSpa.map((service,index) =>    
-            
-            <CardServicesHorizontal key={index}  {...service}/>
-           
+                <CardServicesHorizontal key={index}  {...service}/>
             )}
            </div>
-       
-         
-         
-
-           
-
-    
-           
-              
            </div>
-         
-            
-            
         </section>
     )
 }

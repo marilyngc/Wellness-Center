@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import './GimPage.css';
 
@@ -14,6 +14,14 @@ const GimPage = () =>{
     if(location.state) redirectedTo = location.state.redirectedTo;
     const [plan,setPlan] = useState(redirectedTo ? redirectedTo : "Personalizado");
 
+    useEffect(()=>{
+        let offsetTop  = document.getElementById(plan).offsetTop;
+        window.scrollTo({
+            top: offsetTop-100, 
+            behavior: "smooth"
+        });
+    },[plan])
+
     return(
     <main className="mt-lg-4">
            <div className="gimPage">
@@ -23,7 +31,7 @@ const GimPage = () =>{
         <hr/>
         
         {plan != "" && 
-        <div className="infoService">
+        <div className="infoService" id={plan}>
            
             {typePlan.map((typePlan) =>{
                 if (typePlan.title == plan) return <div className="descriptionPlan">

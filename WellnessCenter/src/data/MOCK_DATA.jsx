@@ -18,6 +18,7 @@ import spaPiedra from "../assets/spa/spaPiedras.png";
 import spaPool from "../assets/spa/spaPool.jpg";
 import spaSauna from "../assets/spa/spaSauna.jpg";
 import spaMasaje from "../assets/spa/spaMasaje.jpg";
+import spaPileta from '../assets/spa/spaPileta.jpg';
 
 // Imagenes de estetica
 import bañoTurco from "../assets/estetica/BañoTurco.jpg";
@@ -256,18 +257,11 @@ export const servicesSpa = [
         className: 'cardService'
     },
     {
-        title: "Wellness Oro para 2",
-        img: spaPiedra,
-        duration: "Duración: 2:00 a 3:00 hrs aproximadamente.",
-        items: ["Sala con aromaterapia y muscicoterapia.",
-            "Jacuzzi.",
-            " Sauna terapéutico o baño turco (vapor)",
-            "Camilla automasajeadora.",
-            " Masaje a elección de medio cuerpo 30 minutos con aceite de coco orgánico. (descontracturante, relajante, brasilero, californiano)",
-            "Terapia facial profunda. (Exfoliación, punta de diamante y humectación)",
-            "Botas de presoterapia.",
-            "Break con infusión o jugo detox libre, budín.",
-            "Bombones exclusivos de wellness Spa.",
+        title: "Wellness Piscina",
+        img: spaPileta,
+        duration: "Duración: Segun reserva (minimo 2hrs).",
+        items: [
+            "Tenemos piscina disponible para reserva de maximo 5 personas. Podes reservar con tu familia o grupo de amigos y pasar la tarde refrescando el verano."
         ],
         className: 'cardService'
     },
