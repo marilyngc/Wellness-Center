@@ -12,7 +12,7 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
           <Card.Img src={img} />
         </div>
 
-        <div className=" col  d-flex flex-column cardBody ">
+        <div className=" col  d-flex flex-column  justify-content-between  cardBody ">
           <div className="px-lg-5 px-1 pt-lg-5 pt-4 col ">
             <h3 className="fs-4 mb-2 ">{title}</h3>
             {items ? (
@@ -26,8 +26,9 @@ export const CardServicesHorizontal = ({ title, img, duration, items,review }) =
            <p className="me-lg-5 pe-lg-5"> {review}</p>
           )
         }
+         
         </div>
-          <div className="  d-flex flex-column align-items-center justify-content-between  mb-5">
+        <div className="  d-flex flex-column align-items-center justify-content-between mb-5  ">
             <h3 className="pb-lg-2 pt-lg-0 pt-4 pb-2 fs-5 ">¿Querés saber más?</h3>
             <BtnReserveRoutes/>
           </div>

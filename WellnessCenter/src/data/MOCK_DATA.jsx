@@ -261,7 +261,9 @@ export const servicesSpa = [
         img: spaPileta,
         duration: "Duración: Segun reserva (minimo 2hrs).",
         items: [
-            "Tenemos piscina disponible para reserva de maximo 5 personas. Podes reservar con tu familia o grupo de amigos y pasar la tarde refrescando el verano."
+            "Tenemos piscina disponible para reserva de maximo 5 personas. ",
+            "Podes reservar con tu familia o grupo de amigos y pasar la tarde refrescando el verano.",
+            
         ],
         className: 'cardService'
     },

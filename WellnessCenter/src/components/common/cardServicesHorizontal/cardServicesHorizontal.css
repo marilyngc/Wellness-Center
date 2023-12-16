@@ -1,5 +1,5 @@
 .cardContent{
-  height: 510px; 
+  height: 520px; 
   width: auto;
   overflow: hidden; 
 
@@ -33,6 +33,72 @@
     
   }
  
+  @media screen and (max-width: 1767px) {
+   
+  
+  
+    .cardContent{
+      height: 530px; 
+      width: auto;
+      overflow: hidden; 
+    
+    }
+  
+.cardBody h3{
+font-size: 20px;
+ 
+  
+}
+}
+  @media screen and (max-width: 1560px) {
+   
+    .contentImage {
+   
+      height: 100%; 
+    }
+    
+
+   
+}  
+  @media screen and (max-width: 1186px) {
+    .contentImage {
+   
+      height: 100%; 
+    }
+    
+  
+
+   
+}  
+  @media screen and (max-width: 1086px) {
+      .contentImage {
+   
+      height: 100%; 
+    }
+    
+  
+
+   
+}  
+  @media screen and (max-width: 990px) {
+   
+    .contentImage {
+      width: 400px;
+height: 50px;  
+
+}
+
+   
+}  
+  @media screen and (max-width: 875px) {
+    
+    .contentImage {
+      width: 400px;
+height: 100px;  
+
+}
+   
+}  
   @media screen and (max-width: 767px) {
    
   
@@ -43,10 +109,17 @@
      
     }
     .contentImage {
-      width: auto;
-height: auto;  
+      width: 700px;
+height: 500px !important;  
+
 
 }
+.contentImage img {
+  width: 100%; 
+  height: 100%;
+  object-fit:cover; 
+}
+
 .cardBody h3{
 font-size: 20px;
  

@@ -26,8 +26,8 @@
     width: 50%;
     height: 350px;
     border-radius: 10px;
-    background-size:cover;
-    background-position:center;
+    background-size:cover !important;
+    background-position:center !important;
     text-align: center;
     flex-direction: column-reverse;
    

@@ -227,12 +227,80 @@
 
 
 
+@media screen and (max-width: 1764px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 400px;
+      padding: 15px 20px;
+    }
+   
+    
+     }
+@media screen and (max-width: 1700px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 390px;
+      padding: 15px 20px;
+    }
+   
+    
+     }
+@media screen and (max-width: 1660px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 360px;
+      padding: 15px 20px;
+    }
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+   
+     }
+@media screen and (max-width: 1564px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 330px;
+      padding: 15px 20px;
+    }
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+   
+     }
+@media screen and (max-width: 1464px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 320px;
+      padding: 15px 30px;
+    }
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+   
+     }
+
 @media screen and (max-width: 1280px) {
 
     .slick-slide > div
     {
  
-      width: 300px;
+      width: 290px;
       padding: 15px 20px;
     }
    
@@ -245,12 +313,13 @@
         margin-top: 2rem !important;
     }
      }
+
 @media screen and (max-width: 567px) {
 
     .slick-slide > div
     {
  
-      width: 380px;
+      width: 450px;
       padding: 15px 0;
     }
    
@@ -260,12 +329,28 @@
         /* Otros estilos específicos para pantallas pequeñas */
     }
      }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
 
     .slick-slide > div
     {
  
-      width: 330px;
+      width: 350px;
+      padding: 15px 0;
+    }
+   
+    .card-personalized-slide > div {
+        width: 100%;
+        height: 100%;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+     }
+
+@media screen and (max-width: 380px) {
+
+    .slick-slide > div
+    {
+ 
+      width: 290px;
       padding: 15px 0;
     }
    

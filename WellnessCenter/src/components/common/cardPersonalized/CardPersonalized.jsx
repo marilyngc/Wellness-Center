@@ -36,7 +36,7 @@ export const CardPersonalized = () => {
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 1.2,
                 slidesToScroll: 1,
                 initialSlide: 1
               }
@@ -44,10 +44,32 @@ export const CardPersonalized = () => {
             {
               breakpoint: 480,
               settings: {
+                slidesToShow: 1.1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
               }
-            }
+            },
+           
+            {
+              breakpoint: 380,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 345,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1
+              }
+            },
           ]
         }
   return(
