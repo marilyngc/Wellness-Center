@@ -16,13 +16,13 @@
 <img width="650" style="margin-bottom: 1.5rem" src="./background-readme.png" />
 </div>
 
----
 
-<div align="center"<br>
-     <div align="center">
-  <h1>Herramientas y Lenguajes</h1>
-</div>
-     <div>
+
+<br>
+
+## :hammer_and_wrench:	**Tech Stack:**
+
+  <div>
       <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" title="HTML" alt="HTML" width="40" heigth="40"/>&nbsp;
       <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="CSS" alt="HTML" width="40" heigth="40"/>&nbsp;
       <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg" title="bootstrap" alt="bootstrap" width="40" heigth="40"/>&nbsp;
@@ -31,13 +31,14 @@
       <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" title="GitHub" alt="HTML" width="40" heigth="40"/>&nbsp;
        <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain.svg" title="Git" alt="HTML" width="40" heigth="40"/>
      </div>
-</div>
+     
 
----
 
-<div align="center">
-  <h1>Links de Interés</h1>
-</div>
+
+<br>
+
+## :triangular_ruler: Prototipado
+
 
 
 * [UI - UX](https://www.figma.com/file/URRP9K1hlCs9ZKJIhA2Y6A/Proyecto-Wellness-Center?type=design&node-id=7-37&mode=design&t=WaFl8dTwfMv2QTNv-0) Investigando al cliente.
